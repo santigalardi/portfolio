@@ -1,5 +1,5 @@
 import { ThemeProvider } from 'styled-components';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { darkTheme, lightTheme } from './utils/Themes.js';
 import Navbar from './components/NavBar';
 import { BrowserRouter as Router } from 'react-router-dom';
@@ -27,6 +27,7 @@ const Wrapper = styled.div`
   clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 98%, 0 100%);
 `;
 function App() {
+  // eslint-disable-next-line no-unused-vars
   const [darkMode, setDarkMode] = useState(true);
   const [openModal, setOpenModal] = useState({ state: false, project: null });
   console.log(openModal);
