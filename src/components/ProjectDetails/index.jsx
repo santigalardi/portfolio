@@ -106,10 +106,10 @@ const Tag = styled.div`
 
 const Members = styled.div`
   display: flex;
-  flex-direction: column;
-  gap: 6px;
+  justify-content: space-between;
+  gap: 10px;
   flex-wrap: wrap;
-  margin: 12px 6px;
+  margin: 25px 15px;
   @media only screen and (max-width: 600px) {
     margin: 4px 6px;
   }

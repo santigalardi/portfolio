@@ -15,7 +15,7 @@ export const Bio = {
   description:
     'I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.',
   github: 'https://github.com/santigalardi',
-  resume: 'https://drive.google.com/file/d/1ffZrcMcn8UatXGIaautbbqpV7ADNaETA/view?usp=sharing',
+  resume: 'https://drive.google.com/file/d/16Lq0mOVoq_0MviftZHDV7F8LxBSspBML/view?usp=drive_link',
   linkedin: 'https://www.linkedin.com/in/santigalardi/',
 };
 
@@ -160,7 +160,7 @@ export const education = [
     img: 'https://pbs.twimg.com/profile_images/1696270326777204736/oF605NLP_400x400.png',
     school: 'Coderhouse',
     date: 'Jan 2023 - Mar 2023',
-    desc: 'I completed my class 12 high school education at Methodist School, Dankuni, where I studied Science with Computer Science.',
+    desc: 'I earned my React Js certification through Coderhouse, which covered advanced concepts and practical applications of this powerful JavaScript library. This certification represents my proficiency in building dynamic and responsive web applications using React.',
     degree: 'React Js Certification',
     cert: reactCert,
   },
@@ -169,7 +169,7 @@ export const education = [
     img: 'https://pbs.twimg.com/profile_images/1696270326777204736/oF605NLP_400x400.png',
     school: 'Coderhouse',
     date: 'Nov 2022 - Jan 2023',
-    desc: 'I completed my class 10 education at Methodist School, Dankuni, where I studied Science with Computer Application.',
+    desc: 'My JavaScript certification from Coderhouse signifies my expertise in JavaScript, a fundamental programming language for web development. This certification reflects my ability to create interactive and feature-rich web solutions using JavaScript.',
     degree: 'JavaScript Certification',
     cert: jsCert,
   },
@@ -178,7 +178,7 @@ export const education = [
     img: 'https://pbs.twimg.com/profile_images/1696270326777204736/oF605NLP_400x400.png',
     school: 'Coderhouse',
     date: 'Sep 2022 - Nov 2022',
-    desc: 'I completed my class 10 education at Methodist School, Dankuni, where I studied Science with Computer Application.',
+    desc: 'I completed the Web Development certification program at Coderhouse, gaining comprehensive knowledge and hands-on experience in various web development technologies. This certification showcases my skills in building and deploying web applications effectively.',
     degree: 'Web Development Certification',
     cert: dbCert,
   },
