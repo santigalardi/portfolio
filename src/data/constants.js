@@ -3,6 +3,11 @@ import henryCert from '../images/henry.png';
 import dbCert from '../images/certificado-desarrollo-web-coderhouse.png';
 import jsCert from '../images/certificado-javascript-coderhouse.png';
 import reactCert from '../images/certificado-react-coderhouse.png';
+import artGalleryImg from '../images/artgalleryimg.jpg';
+import gameAtlasImg from '../images/gameatlasimg.jpg';
+import rickAndMortyImg from '../images/rickandmortyimg.jpg';
+import infinityGamesImg from '../images/infinitygamesimg.jpg';
+import jackImg from '../images/jackimg.jpg';
 
 export const Bio = {
   name: 'Santiago Galardi',
@@ -181,134 +186,115 @@ export const education = [
 
 export const projects = [
   {
-    id: 9,
-    title: 'Trackify',
+    id: 0,
+    title: 'The Art Gallery',
     date: 'Jun 2023 - Jul 2023',
     description:
-      "Trackify is a web application designed to streamline task management and enhance productivity in the workplace. It provides a user-friendly interface for employers to keep track of their employees' daily work activities and empowers employees to log their tasks efficiently. \nAdmin Credentials: # Email: testadmin@gmail.com #Password- 123@testadmin, Employee Credentials:	#Email: testemployee@gmail.com	#Password- 123@Testemployee",
-    image:
-      'https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png',
+      'The Art Gallery is a website where users can view, purchase, and sell digital artworks. Basic design principles and styles (UX:UI) were applied, along with the practice of GIT workflow. I collaborated with the team to implement features such as third-party authentication, search filters, and artwork reviews.',
+    image: artGalleryImg,
     tags: [
-      'Docker',
-      'AWS',
-      'DuckDNS',
-      'Eslint',
-      'Husky',
-      'CI/CD',
-      'React Js',
-      'MongoDb',
+      'React',
+      'Redux',
+      'Bootstrap',
+      'CSS',
+      'Node Js',
+      'Express',
+      'PostgreSQL',
+      'Sequelize',
       'Node Js',
       'Express Js',
       'Redux',
     ],
     category: 'web app',
-    github: 'https://github.com/rishavchanda/Trackify',
-    webapp: 'https://trackify.duckdns.org',
-  },
-  {
-    id: 0,
-    title: 'Podstream',
-    date: 'Apr 2023 - May 2023',
-    description:
-      'Developed a full-stack web application that allows users to search for, play, and pause their favorite podcasts on demand and create podcasts. Implemented user authentication using Google Auth and Jwt Auth, made responsive user interface with React JS that provides users with a seamless experience across all devices. Practiced agile methodologies to optimize team efficiency and communication.',
-    image:
-      'https://user-images.githubusercontent.com/64485885/234602896-a1bd8bcc-b72b-4821-83d6-8ad885bf435e.png',
-    tags: ['React Js', 'MongoDb', 'Node Js', 'Express Js', 'Redux'],
-    category: 'web app',
-    github: 'https://github.com/rishavchanda/Podstream',
-    webapp: 'https://podstream.netlify.app/',
+    github: 'https://github.com/santigalardi/PF-Arts-Client',
+    webapp: 'https://pf-arts-client.vercel.app/',
     member: [
       {
-        name: 'Rishav Chanda',
-        img: 'https://avatars.githubusercontent.com/u/64485885?v=4',
-        linkedin: 'https://www.linkedin.com/in/rishav-chanda-b89a791b3/',
-        github: 'https://github.com/rishavchanda/',
+        name: 'Santiago Galardi',
+        img: 'https://avatars.githubusercontent.com/u/113655660?v=4',
+        linkedin: 'https://www.linkedin.com/in/santigalardi/',
+        github: 'https://github.com/santigalardi',
       },
       {
-        name: 'Upasana Chaudhuri',
-        img: 'https://avatars.githubusercontent.com/u/100614635?v=4',
-        linkedin: 'https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/',
-        github: 'https://github.com/upasana0710',
+        name: 'David Orlando',
+        img: 'https://avatars.githubusercontent.com/u/119124393?v=4',
+        linkedin: 'https://www.linkedin.com/in/david-orlando-miranda-roa-7239b0264/',
+        github: 'https://github.com/Davidongo93',
+      },
+      {
+        name: 'Santiago Morales',
+        img: 'https://avatars.githubusercontent.com/u/118409902?v=4',
+        linkedin: 'https://www.linkedin.com/in/morales-santiago/',
+        github: 'https://github.com/Ssamza',
+      },
+      {
+        name: 'Anabella Simonpietri',
+        img: 'https://avatars.githubusercontent.com/u/120821574?v=4',
+        linkedin: 'https://www.linkedin.com/in/anabellasimonpietri/',
+        github: 'https://github.com/AnabellaSimonpietri',
+      },
+      {
+        name: 'Alex Robert',
+        img: 'https://avatars.githubusercontent.com/u/112449168?v=4',
+        linkedin: 'https://www.linkedin.com/in/alex-robert-calapuja-quispe/',
+        github: 'https://github.com/alexrobertCQ',
+      },
+
+      {
+        name: 'Jhon Daniel Rojas',
+        img: 'https://avatars.githubusercontent.com/u/120231023?v=4',
+        linkedin: 'https://www.linkedin.com/in/jhon-daniel-rojas/',
+        github: 'https://github.com/JhonDaniel01',
       },
     ],
   },
   {
     id: 1,
-    title: 'Vexa',
-    date: 'Oct 2022 - Present',
+    title: 'Game Atlas',
+    date: 'Apr 2023 - May 2023',
     description:
-      'Designed and developed the Vexa project, a project management app that helps users and teams stay organized and on track. Implemented key features such as task tracking, team collaboration, and time tracking to improve productivity and project outcomes and also invite team/project members. The plan is to add a community of users where they can find developers and other team members and chat system implementation.',
-    image:
-      'https://user-images.githubusercontent.com/64485885/234916413-96296f13-fe4b-4cc4-b215-e72bd7c27928.png',
-    tags: ['React Js', 'MongoDb', 'Node Js', 'Express Js', 'Redux', 'NodeMailer'],
+      'Designed and developed a SPA showcasing a dynamic video game gallery. Users can explore a widevariety of titles and even contribute by creating their own video games through a form with validations. Theapplication provides genre filters, sorting options, and a search bar to enhance the user experience.',
+    image: gameAtlasImg,
+    tags: ['React Js', 'Redux', 'CSS', 'Node Js', 'Express Js', 'PostgreSQL', 'Sequelize'],
     category: 'web app',
-    github: 'https://github.com/rishavchanda/Project-Management-App',
-    webapp: 'https://vexa-app.netlify.app/',
+    github: 'https://github.com/santigalardi/PI-videogames',
+    webapp: 'https://pi-videogames-client-rho.vercel.app/',
   },
   {
     id: 2,
-    title: 'Brain Tumor Detection',
-    date: 'Jan 2023 - Mar 2023',
+    title: 'Rick & Morty App',
+    date: 'Feb 2023 - Apr 2023',
     description:
-      "Preprocessed and augmented the dataset to improve model accuracy, trained the model, created API using model and Python, and used React web app for the project's front end. Achievements: Achieved an accuracy of 99.2% to accurately detect brain tumors from medical images.",
-    image: 'https://github.com/rishavchanda/Brain-Tumor-Detection/raw/main/Readme_resource/Image2.png',
-    tags: ['Python', 'Keras', 'TensorFlow', 'VGG16', 'Pickle', 'React'],
-    category: 'machine learning',
-    github: 'https://github.com/rishavchanda/Brain-Tumor-Detection',
-    webapp: 'https://brain-tumor.netlify.app/',
-    member: [
-      {
-        name: 'Rishav Chanda',
-        img: 'https://avatars.githubusercontent.com/u/64485885?v=4',
-        linkedin: 'https://www.linkedin.com/in/rishav-chanda-b89a791b3/',
-        github: 'https://github.com/rishavchanda/',
-      },
-      {
-        name: 'Upasana Chaudhuri',
-        img: 'https://avatars.githubusercontent.com/u/100614635?v=4',
-        linkedin: 'https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/',
-        github: 'https://github.com/upasana0710',
-      },
-    ],
+      'I developed the Rick & Morty App, a SPA that allows users to explore and add characters from the famous series to an interactive gallery. I implemented an efficient search bar to add new characters and a function to include them in a favorites list with filtering and sorting options. Additionally, I designed a controlled login form to ensure a secure and personalized experience.',
+    image: rickAndMortyImg,
+    tags: ['React Js', 'Redux', 'CSS', 'Node Js', 'Express Js'],
+    category: 'web app',
+    github: 'https://github.com/santigalardi/rick_and_morty-client',
+    webapp: 'https://rick-and-morty-client-git-main-santigalardi.vercel.app/',
   },
   {
     id: 3,
-    title: 'Buckoid',
-    date: 'Dec 2021 - Apr 2022',
+    title: 'Infinity Games',
+    date: 'Jan 2023 - Mar 2023',
     description:
-      'App Is Currently In Playstore 100+ Downloads. This Project proposes an “Expense Tracking App”. Keep track of your personal expenses and compare them to your monthly income with the budget planner. It has Google Drive Cloud API for Backup of User Room Database. Made with Kotlin in MVVM Architecture & Live Data.',
-    image:
-      'https://camo.githubusercontent.com/fbf405040ae86b5d4a40f24e4ac034982cb8c0e2d850560ba64527997b258be8/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f6c6f67696e2d65613565322e61707073706f742e636f6d2f6f2f4255434b4f49442532302831292e706e673f616c743d6d6564696126746f6b656e3d32653735376235372d323964372d346263612d613562322d653164346538313432373435',
-    tags: ['Kotlin', 'MVVM', 'Room Database', 'Google Drive Cloud API'],
-    category: 'android app',
-    github: 'https://github.com/rishavchanda/Buckoid-Android-App',
-    webapp: 'https://play.google.com/store/apps/details?id=com.rishav.buckoid',
-  },
-  {
-    id: 10,
-    title: 'Job Finding App',
-    date: 'Jun 2023 - Jul 2023',
-    description:
-      'A Job Finding App made with React Native, Axios. Users can search for any job coming from API and apply there.',
-    image:
-      'https://user-images.githubusercontent.com/64485885/255237090-cf798a2c-1b41-4bb7-b904-b5353a1f08e8.png',
-    tags: ['React Native', 'JavaScript', 'Axios'],
-    category: 'android app',
-    github: 'https://github.com/rishavchanda/Job-finder-App',
-    webapp: 'https://github.com/rishavchanda/Job-finder-App',
+      'I designed and developed Infinity Games, a SPA that simulates an e-commerce platform for video games, providing users with an immersive experience. I implemented categories to facilitate exploration, as well as detailed information to offer relevant insights. The application manages product stock through Firebase, ensuring real-time availability. Infinity Games stands out for its intuitive interface and exceptional functionality.',
+    image: infinityGamesImg,
+    tags: ['React Js', 'CSS', 'Bootstrap', 'Firebase'],
+    category: 'web app',
+    github: 'https://github.com/santigalardi/InfinityGames',
+    webapp: 'https://infinity-games.vercel.app/',
   },
   {
     id: 4,
-    title: 'Whatsapp Clone',
-    date: 'Jul 2021',
+    title: "Jack & Johnson's",
+    date: 'Nov 2022 - Jan 2023',
     description:
-      'A WhatsApp clone made with React JS, Firebase, and Material UI. It has Phone Authentication, Real-time Database. It has a chat room where users can chat with each other. It has a sidebar where users can see all the chat rooms and can create a new chat room. It has a login page where users can log in with their Google account.',
-    image:
-      'https://firebasestorage.googleapis.com/v0/b/whatsapp-clone-rishav.appspot.com/o/Screenshot%20(151).png?alt=media&token=48391593-1ef0-4a8c-a92a-eb82bdf38e89',
-    tags: ['React Js', 'Firebase', 'Firestore', 'Node JS'],
+      'I developed a realistic and user-friendly microphone e-commerce simulator. I implemented an authentication system using localStorage for users and a functional shopping cart, allowing them to add and remove products, as well as empty the cart and proceed with the purchase. The application features a wide variety of simulated microphones presented in the form of cards, providing an intuitive interface to navigate through the available products.',
+    image: jackImg,
+    tags: ['HTML', 'CSS', 'JavaScript'],
     category: 'web app',
-    github: 'https://github.com/rishavchanda/Whatsapp-Clone-React-Js',
-    webapp: 'https://whatsapp-clone-rishav.web.app',
+    github: 'https://github.com/santigalardi/Javascript-Ecommerce',
+    webapp: 'https://javascript-ecommerce-seven.vercel.app/',
   },
 ];
 

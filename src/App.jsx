@@ -30,7 +30,6 @@ function App() {
   // eslint-disable-next-line no-unused-vars
   const [darkMode, setDarkMode] = useState(true);
   const [openModal, setOpenModal] = useState({ state: false, project: null });
-  console.log(openModal);
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <Router>
