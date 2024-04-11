@@ -100,7 +100,7 @@ function Footer() {
             <GitHubIcon />
           </SocialMediaIcon>
         </SocialMediaIcons>
-        <Copyright>&copy; 2023 Santiago Galardi. All rights reserved.</Copyright>
+        <Copyright>&copy; 2024 Santiago Galardi. All rights reserved.</Copyright>
       </FooterWrapper>
     </FooterContainer>
   );

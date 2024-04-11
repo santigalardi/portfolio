@@ -160,21 +160,35 @@ const Button = styled.a`
   padding: 12px 16px;
   border-radius: 8px;
   background-color: ${({ theme }) => theme.primary};
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.5s ease;
+
   ${({ dull, theme }) =>
     dull &&
     `
         background-color: ${theme.bgLight};
         color: ${theme.text_secondary};
         &:hover {
-            background-color: ${({ theme }) => theme.bg + 99};
+            background-color: ${theme.bg + 99};
         }
     `}
-  cursor: pointer;
-  text-decoration: none;
-  transition: all 0.5s ease;
-  &:hover {
+
+  ${({ theme, disabled }) => {
+    if (disabled) {
+      return `
+        background-color: #ccc;
+        color: ${theme.text_secondary};
+        cursor: not-allowed;
+        pointer-events: none;
+      `;
+    }
+  }}
+
+  &:hover:not(:disabled) {
     background-color: ${({ theme }) => theme.primary + 99};
   }
+
   @media only screen and (max-width: 600px) {
     font-size: 12px;
   }
@@ -231,7 +245,7 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
             <Button dull href={project?.github} target='new'>
               View Code
             </Button>
-            <Button href={project?.webapp} target='new'>
+            <Button href={project?.webapp} target='new' disabled={!project?.webapp}>
               View Live App
             </Button>
           </ButtonGroup>

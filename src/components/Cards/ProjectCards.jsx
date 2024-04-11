@@ -139,7 +139,6 @@ const ProjectCards = ({ project, setOpenModal }) => {
           <Avatar src={member.img} key={index} />
         ))}
       </Members>
-      {/* <Button>View Project</Button> */}
     </Card>
   );
 };
