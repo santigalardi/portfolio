@@ -3,6 +3,7 @@ import henryCert from '../images/henry.png';
 import dbCert from '../images/certificado-desarrollo-web-coderhouse.png';
 import jsCert from '../images/certificado-javascript-coderhouse.png';
 import reactCert from '../images/certificado-react-coderhouse.png';
+import spotifyClone from '../images/spotify-clone-img.png';
 import artGalleryImg from '../images/artgalleryimg.jpg';
 import gameAtlasImg from '../images/gameatlasimg.jpg';
 import rickAndMortyImg from '../images/rickandmortyimg.jpg';
@@ -24,24 +25,23 @@ export const skills = [
     title: 'Frontend',
     skills: [
       
+
       {
-        name: 'HTML',
-        image: 'https://www.w3.org/html/logo/badge/html5-badge-h-solo.png',
+        name: 'React Js',
+        image:
+          'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K',
       },
       {
-        name: 'CSS',
-        image: cssImage,
+        name: 'Next Js',
+        image:
+          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACTklEQVR4Ab1XAaQqURB9DyohSykREpRIQSAlBCoECKUFCSRCBBEAaSEABQEoCIEASCwAUICALgCo83do0//9v819XX845O7VnDkzOzP7JWGaBd3C3IJpQVjAHeJ+Rs9a97vKLGrBsB1KgMhEP3FMUUwt4ENMfxr1yQIU4SSjRkbeOZtERmHk6pXQVDlnkHh9S+QLTm1hkiz4n/gzFQuny9FoFLquE+i34x+n02k0m00UCoV3BIzn3MMJrVYLtp1OJ0cS/X4f5/MZhmG8IyDsWtDfEaDIn2232/3zbrvdxuFwwGg04qRBt+VnETBNE0IIkE2n07/erdfrWK/X6Ha73Hb9ZXII3G43ivy3dNRqtZe7lUoFs9mM6oBDwCQCgquALT1FT3a5XF7qIZ/PYzgcolqtcggIIgBZAgRKB6lCRalp2uM8k8mAVMrlchwC+DEBipycE4n5fP44j8ViKJVKSCaTbAJCpgaez4vFIsjoWa/XA50FAgEkEgmEw2F2CkxZBZ5Br5tt1ITcbjd8Ph88Hg+7CBefECCsVitS4aVJcV9D/VMCVITk/Hq9YrPZyBBo2a1YMGvAcQYcj0cCtWMugcdYNhjDiBrP25mx3++x3W6RzWZZ8isfxzQLlsslJpMJpYY5jhkqcOH1ejEYDDAej9FoNOByuZxGsfqVzC7KTqcDSkkqleKsZOqX0mAwiHK5DGrJfr+fs5SqX8sjkQji8ThCoRC+v78Za7l6JagrUh3YkUuZpqgwDaecc9VYSDoV5Fg+at7n+eLN57kuE/EvzHr/Kvs31aYAAAAASUVORK5CYII=',
       },
       {
         name: 'JavaScript',
         image:
           'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png',
       },
-      {
-        name: 'React Js',
-        image:
-          'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K',
-      },
+
       {
         name: 'TypeScript',
         image: 'https://w7.pngwing.com/pngs/915/519/png-transparent-typescript-hd-logo-thumbnail.png',
@@ -56,9 +56,12 @@ export const skills = [
         image: 'https://repository-images.githubusercontent.com/347723622/92065800-865a-11eb-9626-dff3cb7fef55',
       },
       {
-        name: 'Next Js',
-        image:
-          'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACTklEQVR4Ab1XAaQqURB9DyohSykREpRIQSAlBCoECKUFCSRCBBEAaSEABQEoCIEASCwAUICALgCo83do0//9v819XX845O7VnDkzOzP7JWGaBd3C3IJpQVjAHeJ+Rs9a97vKLGrBsB1KgMhEP3FMUUwt4ENMfxr1yQIU4SSjRkbeOZtERmHk6pXQVDlnkHh9S+QLTm1hkiz4n/gzFQuny9FoFLquE+i34x+n02k0m00UCoV3BIzn3MMJrVYLtp1OJ0cS/X4f5/MZhmG8IyDsWtDfEaDIn2232/3zbrvdxuFwwGg04qRBt+VnETBNE0IIkE2n07/erdfrWK/X6Ha73Hb9ZXII3G43ivy3dNRqtZe7lUoFs9mM6oBDwCQCgquALT1FT3a5XF7qIZ/PYzgcolqtcggIIgBZAgRKB6lCRalp2uM8k8mAVMrlchwC+DEBipycE4n5fP44j8ViKJVKSCaTbAJCpgaez4vFIsjoWa/XA50FAgEkEgmEw2F2CkxZBZ5Br5tt1ITcbjd8Ph88Hg+7CBefECCsVitS4aVJcV9D/VMCVITk/Hq9YrPZyBBo2a1YMGvAcQYcj0cCtWMugcdYNhjDiBrP25mx3++x3W6RzWZZ8isfxzQLlsslJpMJpYY5jhkqcOH1ejEYDDAej9FoNOByuZxGsfqVzC7KTqcDSkkqleKsZOqX0mAwiHK5DGrJfr+fs5SqX8sjkQji8ThCoRC+v78Za7l6JagrUh3YkUuZpqgwDaecc9VYSDoV5Fg+at7n+eLN57kuE/EvzHr/Kvs31aYAAAAASUVORK5CYII=',
+        name: 'HTML',
+        image: 'https://www.w3.org/html/logo/badge/html5-badge-h-solo.png',
+      },
+      {
+        name: 'CSS',
+        image: cssImage,
       },
       {
         name: 'React Native',
@@ -68,6 +71,10 @@ export const skills = [
         name: 'Bootstrap',
         image: 'https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png',
       },
+      {
+        name: 'Tailwind',
+        image: 'https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg',
+      }
     ],
   },
   {
@@ -81,10 +88,6 @@ export const skills = [
         name: 'Express Js',
         image:
           'https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg',
-      },
-      {
-        name: 'GraphQL',
-        image: 'https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg',
       },
       {
         name: 'Sequelize',
@@ -104,6 +107,10 @@ export const skills = [
           'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg',
       },
       {
+        name: 'Supabase',
+        image: 'https://www.vectorlogo.zone/logos/supabase/supabase-icon.svg',
+      },
+      {
         name: 'Firebase',
         image: 'https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg',
       },
@@ -111,10 +118,10 @@ export const skills = [
         name: 'Auth0',
         image: 'https://www.vectorlogo.zone/logos/auth0/auth0-icon.svg',
       },
-      {
-        name: 'AWS',
-        image: 'https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg',
-      }
+      // {
+      //   name: 'AWS',
+      //   image: 'https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg',
+      // }
     ],
   },
 
@@ -135,16 +142,8 @@ export const skills = [
         image: 'https://www.vectorlogo.zone/logos/gitlab/gitlab-icon.svg',
       },
       {
-        name: 'Netlify',
-        image: 'https://seeklogo.com/images/N/netlify-logo-BD8F8A77E2-seeklogo.com.png',
-      },
-      {
         name: 'Vercel',
         image: 'https://www.vectorlogo.zone/logos/vercel/vercel-icon.svg',
-      },
-      {
-        name: 'fly.io',
-        image: 'https://www.vectorlogo.zone/logos/flyio/flyio-icon.svg',
       },
       {
         name: 'Jira',
@@ -152,11 +151,15 @@ export const skills = [
           'https://www.vectorlogo.zone/logos/atlassian_jira/atlassian_jira-icon.svg',
       },
       {
-        name: 'Postman',
+        name: 'PayPal',
         image:
-          'https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg',
+          'https://www.vectorlogo.zone/logos/paypal/paypal-icon.svg',
       },
-      
+      {
+        name: 'Stripe',
+        image:
+          'https://www.vectorlogo.zone/logos/stripe/stripe-icon.svg',
+      },
       {
         name: 'Figma',
         image:
@@ -212,6 +215,17 @@ export const education = [
 export const projects = [
   {
     id: 0,
+    title: 'Spotify Clone',
+    date: 'Mar 2024',
+    description: 'Developed a Spotify clone using React, Next.js, and Supabase, including music streaming functionalities, user authentication, and Stripe payment integration.',
+    image: spotifyClone,
+    tags: ['React', 'Next Js', 'Supabase', 'Stripe', 'Tailwind'],
+    category: 'web app',
+    github: 'https://github.com/santigalardi/spotify-clone',
+    webapp: 'https://spotify-clone-santigalardis-projects.vercel.app'
+  },
+  {
+    id: 1,
     title: 'The Art Gallery',
     date: 'Jun 2023 - Jul 2023',
     description:
@@ -274,7 +288,7 @@ export const projects = [
     ],
   },
   {
-    id: 1,
+    id: 2,
     title: 'Game Atlas',
     date: 'Apr 2023 - May 2023',
     description:
@@ -286,7 +300,7 @@ export const projects = [
     webapp: 'https://pi-videogames-client-rho.vercel.app/',
   },
   {
-    id: 2,
+    id: 3,
     title: 'Rick & Morty App',
     date: 'Feb 2023 - Apr 2023',
     description:
@@ -298,7 +312,7 @@ export const projects = [
     webapp: 'https://rick-and-morty-client-git-main-santigalardi.vercel.app/',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Infinity Games',
     date: 'Jan 2023 - Mar 2023',
     description:
@@ -310,7 +324,7 @@ export const projects = [
     webapp: 'https://infinity-games.vercel.app/',
   },
   {
-    id: 4,
+    id: 5,
     title: "Jack & Johnson's",
     date: 'Nov 2022 - Jan 2023',
     description:
