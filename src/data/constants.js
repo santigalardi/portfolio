@@ -3,7 +3,9 @@ import henryCert from '../images/henry.png';
 import dbCert from '../images/certificado-desarrollo-web-coderhouse.png';
 import jsCert from '../images/certificado-javascript-coderhouse.png';
 import reactCert from '../images/certificado-react-coderhouse.png';
+import ravelaImg from '../images/ravela-img.png';
 import spotifyClone from '../images/spotify-clone-img.png';
+import krowtiImg from '../images/krowti.png';
 import artGalleryImg from '../images/artgalleryimg.jpg';
 import gameAtlasImg from '../images/gameatlasimg.jpg';
 import rickAndMortyImg from '../images/rickandmortyimg.jpg';
@@ -12,9 +14,9 @@ import jackImg from '../images/jackimg.jpg';
 
 export const Bio = {
   name: 'Santiago Galardi',
-  roles: ['Full Stack Developer', 'Frontend Developer', 'UI/UX Designer', 'Backend Developer', 'Programmer'],
+  roles: ['Full Stack Developer', 'Frontend Developer', 'Backend Developer', 'Programmer'],
   description:
-    'I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.',
+    'I am a passionate and adaptable developer with a strong focus on delivering quality work. I enjoy learning new skills and taking on challenges, always aiming to improve and contribute effectively. My positive attitude and dedication help me bring value to any project I work on.',
   github: 'https://github.com/santigalardi',
   resume: 'https://drive.google.com/file/d/1M8bZSQpotaIYwV1Q6yu3dhhb65enpNaA/view?usp=drive_link',
   linkedin: 'https://www.linkedin.com/in/santigalardi/',
@@ -215,8 +217,19 @@ export const education = [
 export const projects = [
   {
     id: 0,
+    title: 'Ravela',
+    date: 'Jun 2023 - Present',
+    description: 'Developed Ravela, a platform that boosts emerging LATAM DJs by elevating their visibility and audience through innovative music events and digital media. Built with Next.js and Supabase, the platform includes user authentication, event management, video set submissions, and a custom video player for an enhanced user experience.',
+    image: ravelaImg,
+    tags: ['React', 'Next Js', 'Typescript', 'Supabase', 'Clerk', 'Tailwind'],
+    category: 'web app',
+    github: 'https://github.com/santigalardi/spotify-clone',
+    webapp: 'https://spotify-clone-santigalardis-projects.vercel.app'
+  },
+  {
+    id: 1,
     title: 'Spotify Clone',
-    date: 'Mar 2024',
+    date: 'Feb 2024 - Mar 2024',
     description: 'Developed a Spotify clone using React, Next.js, and Supabase, including music streaming functionalities, user authentication, and Stripe payment integration.',
     image: spotifyClone,
     tags: ['React', 'Next Js', 'Supabase', 'Stripe', 'Tailwind'],
@@ -225,7 +238,18 @@ export const projects = [
     webapp: 'https://spotify-clone-santigalardis-projects.vercel.app'
   },
   {
-    id: 1,
+    id: 2,
+    title: 'KrowTI',
+    date: 'Oct 2023 - Mar 2024',
+    description: 'IT-focused job search platform connecting recruiters, companies, and candidates.',
+    image: krowtiImg,
+    tags: ['React', 'Typescript', 'Redux Toolkit', 'Node Js', 'Tailwind'],
+    category: 'web app',
+    github: 'https://github.com/santigalardi/spotify-clone',
+    webapp: 'https://spotify-clone-santigalardis-projects.vercel.app',
+  },
+  {
+    id: 3,
     title: 'The Art Gallery',
     date: 'Jun 2023 - Jul 2023',
     description:
@@ -234,15 +258,10 @@ export const projects = [
     tags: [
       'React',
       'Redux',
+      'Node',
       'Bootstrap',
-      'CSS',
-      'Node Js',
-      'Express',
+      'PayPal',
       'PostgreSQL',
-      'Sequelize',
-      'Node Js',
-      'Express Js',
-      'Redux',
     ],
     category: 'web app',
     github: 'https://github.com/santigalardi/PF-Arts-Client',
@@ -288,7 +307,7 @@ export const projects = [
     ],
   },
   {
-    id: 2,
+    id: 4,
     title: 'Game Atlas',
     date: 'Apr 2023 - May 2023',
     description:
@@ -300,7 +319,7 @@ export const projects = [
     webapp: 'https://pi-videogames-client-rho.vercel.app/',
   },
   {
-    id: 3,
+    id: 5,
     title: 'Rick & Morty App',
     date: 'Feb 2023 - Apr 2023',
     description:
@@ -312,7 +331,7 @@ export const projects = [
     webapp: 'https://rick-and-morty-client-git-main-santigalardi.vercel.app/',
   },
   {
-    id: 4,
+    id: 6,
     title: 'Infinity Games',
     date: 'Jan 2023 - Mar 2023',
     description:
@@ -324,7 +343,7 @@ export const projects = [
     webapp: 'https://infinity-games.vercel.app/',
   },
   {
-    id: 5,
+    id: 7,
     title: "Jack & Johnson's",
     date: 'Nov 2022 - Jan 2023',
     description:
