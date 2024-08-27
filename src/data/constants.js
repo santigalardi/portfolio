@@ -223,8 +223,8 @@ export const projects = [
     image: ravelaImg,
     tags: ['React', 'Next Js', 'Typescript', 'Supabase', 'Clerk', 'Tailwind'],
     category: 'web app',
-    github: 'https://github.com/santigalardi/spotify-clone',
-    webapp: 'https://spotify-clone-santigalardis-projects.vercel.app'
+    github: 'https://github.com/santigalardi/ravela',
+    webapp: 'https://ravela.com.ar/'
   },
   {
     id: 1,
@@ -245,8 +245,8 @@ export const projects = [
     image: krowtiImg,
     tags: ['React', 'Typescript', 'Redux Toolkit', 'Node Js', 'Tailwind'],
     category: 'web app',
-    github: 'https://github.com/santigalardi/spotify-clone',
-    webapp: 'https://spotify-clone-santigalardis-projects.vercel.app',
+    github: 'https://gitlab.hostyweb.cl/krowti/krowti-frontend',
+    webapp: 'https://staging.krowti.com/iniciar-sesion',
   },
   {
     id: 3,
