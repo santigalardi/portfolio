@@ -3,6 +3,8 @@ import henryCert from '../images/henry.png';
 import dbCert from '../images/certificado-desarrollo-web-coderhouse.png';
 import jsCert from '../images/certificado-javascript-coderhouse.png';
 import reactCert from '../images/certificado-react-coderhouse.png';
+
+import financePlatformImg from '../images/finance.png';
 import ravelaImg from '../images/ravela-img.png';
 import spotifyClone from '../images/spotify-clone-img.png';
 import krowtiImg from '../images/krowti.png';
@@ -14,11 +16,17 @@ import jackImg from '../images/jackimg.jpg';
 
 export const Bio = {
   name: 'Santiago Galardi',
-  roles: ['Full Stack Developer', 'Frontend Developer', 'Backend Developer', 'Programmer'],
+  roles: [
+    'Full Stack Developer',
+    'Frontend Developer',
+    'Backend Developer',
+    'Programmer',
+  ],
   description:
     'I am a passionate and adaptable developer with a strong focus on delivering quality work. I enjoy learning new skills and taking on challenges, always aiming to improve and contribute effectively. My positive attitude and dedication help me bring value to any project I work on.',
   github: 'https://github.com/santigalardi',
-  resume: 'https://drive.google.com/file/d/1M8bZSQpotaIYwV1Q6yu3dhhb65enpNaA/view?usp=drive_link',
+  resume:
+    'https://drive.google.com/file/d/1M8bZSQpotaIYwV1Q6yu3dhhb65enpNaA/view?usp=drive_link',
   linkedin: 'https://www.linkedin.com/in/santigalardi/',
 };
 
@@ -26,8 +34,6 @@ export const skills = [
   {
     title: 'Frontend',
     skills: [
-      
-
       {
         name: 'React Js',
         image:
@@ -46,7 +52,8 @@ export const skills = [
 
       {
         name: 'TypeScript',
-        image: 'https://w7.pngwing.com/pngs/915/519/png-transparent-typescript-hd-logo-thumbnail.png',
+        image:
+          'https://w7.pngwing.com/pngs/915/519/png-transparent-typescript-hd-logo-thumbnail.png',
       },
       {
         name: 'Redux',
@@ -55,7 +62,8 @@ export const skills = [
       },
       {
         name: 'Redux Toolkit',
-        image: 'https://repository-images.githubusercontent.com/347723622/92065800-865a-11eb-9626-dff3cb7fef55',
+        image:
+          'https://repository-images.githubusercontent.com/347723622/92065800-865a-11eb-9626-dff3cb7fef55',
       },
       {
         name: 'HTML',
@@ -67,16 +75,19 @@ export const skills = [
       },
       {
         name: 'React Native',
-        image: 'https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-png-transparent.png',
+        image:
+          'https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-png-transparent.png',
       },
       {
         name: 'Bootstrap',
-        image: 'https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png',
+        image:
+          'https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png',
       },
       {
         name: 'Tailwind',
-        image: 'https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg',
-      }
+        image:
+          'https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg',
+      },
     ],
   },
   {
@@ -88,12 +99,12 @@ export const skills = [
       },
       {
         name: 'Express Js',
-        image:
-          'https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg',
+        image: 'https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg',
       },
       {
         name: 'Sequelize',
-        image: 'https://cdn.freebiesupply.com/logos/large/2x/sequelize-logo-png-transparent.png',
+        image:
+          'https://cdn.freebiesupply.com/logos/large/2x/sequelize-logo-png-transparent.png',
       },
       {
         name: 'PostgreSQL',
@@ -132,8 +143,7 @@ export const skills = [
     skills: [
       {
         name: 'Git',
-        image:
-          'https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg',
+        image: 'https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg',
       },
       {
         name: 'GitHub',
@@ -154,23 +164,20 @@ export const skills = [
       },
       {
         name: 'PayPal',
-        image:
-          'https://www.vectorlogo.zone/logos/paypal/paypal-icon.svg',
+        image: 'https://www.vectorlogo.zone/logos/paypal/paypal-icon.svg',
       },
       {
         name: 'Stripe',
-        image:
-          'https://www.vectorlogo.zone/logos/stripe/stripe-icon.svg',
+        image: 'https://www.vectorlogo.zone/logos/stripe/stripe-icon.svg',
       },
       {
         name: 'Figma',
-        image:
-          'https://www.vectorlogo.zone/logos/figma/figma-icon.svg',
+        image: 'https://www.vectorlogo.zone/logos/figma/figma-icon.svg',
       },
       {
         name: 'Jest',
         image: 'https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg',
-      }
+      },
     ],
   },
 ];
@@ -217,31 +224,54 @@ export const education = [
 export const projects = [
   {
     id: 0,
-    title: 'Ravela',
-    date: 'Jun 2023 - Present',
-    description: 'Developed Ravela, a platform that boosts emerging LATAM DJs by elevating their visibility and audience through innovative music events and digital media. Built with Next.js and Supabase, the platform includes user authentication, event management, video set submissions, and a custom video player for an enhanced user experience.',
-    image: ravelaImg,
-    tags: ['React', 'Next Js', 'Typescript', 'Supabase', 'Clerk', 'Tailwind'],
+    title: 'Finance SaaS Platform',
+    date: 'Jul 2024 - Aug 2024',
+    description:
+      'Developed a comprehensive Finance SaaS Platform that enables users to track income and expenses, categorize transactions, and import CSV files for bulk transactions. The platform features an interactive financial dashboard, customizable filters, and detailed transaction management. Built with Next.js 14, TailwindCSS, and PostgreSQL, the application integrates state management with Tanstack React Query, an API powered by Hono.js, and authentication via Clerk.',
+    image: financePlatformImg,
+    tags: [
+      'React',
+      'Next.js',
+      'TypeScript',
+      'Clerk',
+      'Tailwind',
+      'Drizzle ORM',
+      'Hono.js',
+    ],
     category: 'web app',
-    github: 'https://github.com/santigalardi/ravela',
-    webapp: 'https://ravela.com.ar/'
+    github: 'https://github.com/santigalardi/finance-platform',
+    webapp: 'https://finance-platform-alpha.vercel.app/',
   },
   {
     id: 1,
-    title: 'Spotify Clone',
-    date: 'Feb 2024 - Mar 2024',
-    description: 'Developed a Spotify clone using React, Next.js, and Supabase, including music streaming functionalities, user authentication, and Stripe payment integration.',
-    image: spotifyClone,
-    tags: ['React', 'Next Js', 'Supabase', 'Stripe', 'Tailwind'],
+    title: 'Ravela',
+    date: 'Jun 2023 - Present',
+    description:
+      'Developed Ravela, a platform that boosts emerging LATAM DJs by elevating their visibility and audience through innovative music events and digital media. Built with Next.js and Supabase, the platform includes user authentication, event management, video set submissions, and a custom video player for an enhanced user experience.',
+    image: ravelaImg,
+    tags: ['React', 'Next.js', 'Typescript', 'Supabase', 'Clerk', 'Tailwind'],
     category: 'web app',
-    github: 'https://github.com/santigalardi/spotify-clone',
-    webapp: 'https://spotify-clone-santigalardis-projects.vercel.app'
+    github: 'https://github.com/santigalardi/ravela',
+    webapp: 'https://ravela.com.ar/',
   },
   {
     id: 2,
+    title: 'Spotify Clone',
+    date: 'Feb 2024 - Mar 2024',
+    description:
+      'Developed a Spotify clone using React, Next.js, and Supabase, including music streaming functionalities, user authentication, and Stripe payment integration.',
+    image: spotifyClone,
+    tags: ['React', 'Next.js', 'Supabase', 'Stripe', 'Tailwind'],
+    category: 'web app',
+    github: 'https://github.com/santigalardi/spotify-clone',
+    webapp: 'https://spotify-clone-santigalardis-projects.vercel.app',
+  },
+  {
+    id: 3,
     title: 'KrowTI',
     date: 'Oct 2023 - Mar 2024',
-    description: 'IT-focused job search platform connecting recruiters, companies, and candidates.',
+    description:
+      'IT-focused job search platform connecting recruiters, companies, and candidates.',
     image: krowtiImg,
     tags: ['React', 'Typescript', 'Redux Toolkit', 'Node Js', 'Tailwind'],
     category: 'web app',
@@ -249,20 +279,13 @@ export const projects = [
     webapp: 'https://staging.krowti.com/iniciar-sesion',
   },
   {
-    id: 3,
+    id: 4,
     title: 'The Art Gallery',
     date: 'Jun 2023 - Jul 2023',
     description:
       'The Art Gallery is a website where users can view, purchase, and sell digital artworks. Basic design principles and styles (UX:UI) were applied, along with the practice of GIT workflow. I collaborated with the team to implement features such as third-party authentication, search filters, and artwork reviews.',
     image: artGalleryImg,
-    tags: [
-      'React',
-      'Redux',
-      'Node',
-      'Bootstrap',
-      'PayPal',
-      'PostgreSQL',
-    ],
+    tags: ['React', 'Redux', 'Node', 'Bootstrap', 'PayPal', 'PostgreSQL'],
     category: 'web app',
     github: 'https://github.com/santigalardi/PF-Arts-Client',
     // webapp: 'https://pf-arts-client.vercel.app/',
@@ -276,7 +299,8 @@ export const projects = [
       {
         name: 'David Orlando',
         img: 'https://avatars.githubusercontent.com/u/119124393?v=4',
-        linkedin: 'https://www.linkedin.com/in/david-orlando-miranda-roa-7239b0264/',
+        linkedin:
+          'https://www.linkedin.com/in/david-orlando-miranda-roa-7239b0264/',
         github: 'https://github.com/Davidongo93',
       },
       {
@@ -307,19 +331,27 @@ export const projects = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: 'Game Atlas',
     date: 'Apr 2023 - May 2023',
     description:
       'Designed and developed a SPA showcasing a dynamic video game gallery. Users can explore a widevariety of titles and even contribute by creating their own video games through a form with validations. Theapplication provides genre filters, sorting options, and a search bar to enhance the user experience.',
     image: gameAtlasImg,
-    tags: ['React Js', 'Redux', 'CSS', 'Node Js', 'Express Js', 'PostgreSQL', 'Sequelize'],
+    tags: [
+      'React Js',
+      'Redux',
+      'CSS',
+      'Node Js',
+      'Express Js',
+      'PostgreSQL',
+      'Sequelize',
+    ],
     category: 'web app',
     github: 'https://github.com/santigalardi/PI-videogames',
-    webapp: 'https://pi-videogames-client-rho.vercel.app/',
+    // webapp: 'https://pi-videogames-client-rho.vercel.app/',
   },
   {
-    id: 5,
+    id: 6,
     title: 'Rick & Morty App',
     date: 'Feb 2023 - Apr 2023',
     description:
@@ -331,7 +363,7 @@ export const projects = [
     webapp: 'https://rick-and-morty-client-git-main-santigalardi.vercel.app/',
   },
   {
-    id: 6,
+    id: 7,
     title: 'Infinity Games',
     date: 'Jan 2023 - Mar 2023',
     description:
@@ -343,7 +375,7 @@ export const projects = [
     webapp: 'https://infinity-games.vercel.app/',
   },
   {
-    id: 7,
+    id: 8,
     title: "Jack & Johnson's",
     date: 'Nov 2022 - Jan 2023',
     description:

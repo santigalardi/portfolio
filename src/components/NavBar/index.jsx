@@ -6,7 +6,6 @@ import {
   Span,
   NavLogo,
   NavItems,
-  GitHubButton,
   ButtonContainer,
   MobileIcon,
   MobileMenu,
@@ -15,15 +14,33 @@ import {
 import { DiCssdeck } from 'react-icons/di';
 import { FaBars } from 'react-icons/fa';
 import { Bio } from '../../data/constants';
-import { useTheme } from 'styled-components';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import styled from 'styled-components';
+
+const SocialMediaIcons = styled.div`
+  display: flex;
+  margin-top: 1rem;
+`;
+
+const SocialMediaIcon = styled.a`
+  display: inline-block;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  color: ${({ theme }) => theme.text_primary};
+  transition: color 0.2s ease-in-out;
+  &:hover {
+    color: ${({ theme }) => theme.primary};
+  }
+`;
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const theme = useTheme();
+
   return (
     <Nav>
       <NavBarContainer>
-        <NavLogo to='/'>
+        <NavLogo to="/">
           <a
             style={{
               display: 'flex',
@@ -33,7 +50,7 @@ const Navbar = () => {
               cursor: 'pointer',
             }}
           >
-            <DiCssdeck size='3rem' /> <Span>Portfolio</Span>
+            <DiCssdeck size="3rem" /> <Span>Portfolio</Span>
           </a>
         </NavLogo>
         <MobileIcon>
@@ -44,20 +61,25 @@ const Navbar = () => {
           />
         </MobileIcon>
         <NavItems>
-          <NavLink href='#about'>About</NavLink>
-          <NavLink href='#skills'>Skills</NavLink>
-          <NavLink href='#projects'>Projects</NavLink>
-          <NavLink href='#education'>Education</NavLink>
+          <NavLink href="#about">About</NavLink>
+          <NavLink href="#skills">Skills</NavLink>
+          <NavLink href="#projects">Projects</NavLink>
+          <NavLink href="#education">Education</NavLink>
         </NavItems>
         <ButtonContainer>
-          <GitHubButton href={Bio.github} target='_blank'>
-            Github Profile
-          </GitHubButton>
+          <SocialMediaIcons>
+            <SocialMediaIcon href={Bio.linkedin} target="display">
+              <LinkedInIcon />
+            </SocialMediaIcon>
+            <SocialMediaIcon href={Bio.github} target="display">
+              <GitHubIcon />
+            </SocialMediaIcon>
+          </SocialMediaIcons>
         </ButtonContainer>
         {isOpen && (
           <MobileMenu isOpen={isOpen}>
             <MobileLink
-              href='#about'
+              href="#about"
               onClick={() => {
                 setIsOpen(!isOpen);
               }}
@@ -65,7 +87,7 @@ const Navbar = () => {
               About
             </MobileLink>
             <MobileLink
-              href='#skills'
+              href="#skills"
               onClick={() => {
                 setIsOpen(!isOpen);
               }}
@@ -73,7 +95,7 @@ const Navbar = () => {
               Skills
             </MobileLink>
             <MobileLink
-              href='#projects'
+              href="#projects"
               onClick={() => {
                 setIsOpen(!isOpen);
               }}
@@ -81,25 +103,21 @@ const Navbar = () => {
               Projects
             </MobileLink>
             <MobileLink
-              href='#education'
+              href="#education"
               onClick={() => {
                 setIsOpen(!isOpen);
               }}
             >
               Education
             </MobileLink>
-            <GitHubButton
-              style={{
-                padding: '10px 16px',
-                background: `${theme.primary}`,
-                color: 'white',
-                width: 'max-content',
-              }}
-              href={Bio.github}
-              target='_blank'
-            >
-              Github Profile
-            </GitHubButton>
+            <SocialMediaIcons>
+              <SocialMediaIcon href={Bio.linkedin} target="display">
+                <LinkedInIcon />
+              </SocialMediaIcon>
+              <SocialMediaIcon href={Bio.github} target="display">
+                <GitHubIcon />
+              </SocialMediaIcon>
+            </SocialMediaIcons>
           </MobileMenu>
         )}
       </NavBarContainer>
