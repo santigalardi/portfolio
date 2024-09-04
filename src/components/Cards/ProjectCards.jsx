@@ -26,11 +26,11 @@ const Card = styled.div`
   display: flex;
   flex-direction: column;
   gap: 14px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
   &:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 0 50px 4px rgba(0, 0, 0, 0.6);
-    filter: brightness(1.1);
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.6);
+    filter: brightness(1.2);
   }
   &:hover ${Button} {
     display: block;
@@ -58,7 +58,7 @@ const Tag = styled.span`
   font-size: 12px;
   font-weight: 400;
   color: ${({ theme }) => theme.primary};
-  background-color: ${({ theme }) => theme.primary + 15};
+  background-color: ${({ theme }) => theme.primary + 20};
   padding: 2px 8px;
   border-radius: 10px;
 `;
@@ -87,7 +87,7 @@ const Date = styled.div`
   font-size: 12px;
   margin-left: 2px;
   font-weight: 400;
-  color: ${({ theme }) => theme.text_secondary + 80};
+  color: ${({ theme }) => theme.text_secondary + 90};
   @media only screen and (max-width: 768px) {
     font-size: 10px;
   }
@@ -95,7 +95,7 @@ const Date = styled.div`
 
 const Description = styled.div`
   font-weight: 400;
-  color: ${({ theme }) => theme.text_secondary + 99};
+  color: ${({ theme }) => theme.text_secondary};
   overflow: hidden;
   margin-top: 8px;
   display: -webkit-box;

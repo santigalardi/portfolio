@@ -6,15 +6,22 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import { education } from '../../data/constants';
 import EducationCard from '../Cards/EducationCard';
-import { Container, Wrapper, Title, Desc, TimelineSection } from './EducationStyle';
+import {
+  Container,
+  Wrapper,
+  Title,
+  Desc,
+  TimelineSection,
+} from './EducationStyle';
 
 const index = () => {
   return (
-    <Container id='education'>
+    <Container id="education">
       <Wrapper>
-        <Title>Education</Title>
+        <Title>Educación</Title>
         <Desc>
-          My education has been a journey of self-discovery and growth. My educational details are as follows.
+          Mi educación ha sido un viaje de autodescubrimiento y crecimiento. A
+          continuación, detallo mi trayectoria educativa. 👨‍🎓
         </Desc>
         <TimelineSection>
           <Timeline>
@@ -24,7 +31,7 @@ const index = () => {
                   <EducationCard education={education} />
                 </TimelineContent>
                 <TimelineSeparator>
-                  <TimelineDot variant='outlined' color='secondary' />
+                  <TimelineDot variant="outlined" color="secondary" />
                   <TimelineConnector style={{ background: '#854CE6' }} />
                 </TimelineSeparator>
               </TimelineItem>

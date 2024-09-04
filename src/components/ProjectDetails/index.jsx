@@ -55,7 +55,7 @@ const Date = styled.div`
 const Desc = styled.div`
   font-size: 16px;
   font-weight: 400;
-  color: ${({ theme }) => theme.text_primary};
+  color: ${({ theme }) => theme.text_secondary};
   margin: 8px 6px;
   @media only screen and (max-width: 600px) {
     font-size: 14px;
@@ -197,7 +197,10 @@ const Button = styled.a`
 const ProjectDetails = ({ openModal, setOpenModal }) => {
   const project = openModal?.project;
   return (
-    <Modal open={true} onClose={() => setOpenModal({ state: false, project: null })}>
+    <Modal
+      open={true}
+      onClose={() => setOpenModal({ state: false, project: null })}
+    >
       <Container>
         <Wrapper>
           <CloseRounded
@@ -220,18 +223,22 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
           <Desc>{project?.description}</Desc>
           {project.member && (
             <>
-              <Label>Members</Label>
+              <Label>Miembros</Label>
               <Members>
                 {project?.member.map((member, index) => (
                   <Member key={index}>
                     <MemberImage src={member.img} />
                     <MemberName>{member.name}</MemberName>
-                    <a href={member.github} target='new' style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <a
+                      href={member.github}
+                      target="new"
+                      style={{ textDecoration: 'none', color: 'inherit' }}
+                    >
                       <GitHub />
                     </a>
                     <a
                       href={member.linkedin}
-                      target='new'
+                      target="new"
                       style={{ textDecoration: 'none', color: 'inherit' }}
                     >
                       <LinkedIn />
@@ -242,11 +249,15 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
             </>
           )}
           <ButtonGroup>
-            <Button dull href={project?.github} target='new'>
-              View Code
+            <Button dull href={project?.github} target="new">
+              Repositorio
             </Button>
-            <Button href={project?.webapp} target='new' disabled={!project?.webapp}>
-              View Live App
+            <Button
+              href={project?.webapp}
+              target="new"
+              disabled={!project?.webapp}
+            >
+              Ver aplicación
             </Button>
           </ButtonGroup>
         </Wrapper>

@@ -76,7 +76,7 @@ const Skill = styled.div`
 const SkillTitle = styled.h2`
   font-size: 28px;
   font-weight: 600;
-  color: ${({ theme }) => theme.text_secondary};
+  color: ${({ theme }) => theme.text_primary};
   margin-bottom: 20px;
   text-align: center;
 `;
@@ -92,8 +92,8 @@ const SkillList = styled.div`
 const SkillItem = styled.div`
   font-size: 16px;
   font-weight: 400;
-  color: ${({ theme }) => theme.text_primary + 80};
-  border: 1px solid ${({ theme }) => theme.text_primary + 80};
+  color: ${({ theme }) => theme.text_secondary};
+  border: 1px solid ${({ theme }) => theme.text_primary + 70};
   border-radius: 12px;
   padding: 12px 16px;
   display: flex;
@@ -117,10 +117,13 @@ const SkillImage = styled.img`
 
 const Skills = () => {
   return (
-    <Container id='skills'>
+    <Container id="skills">
       <Wrapper>
         <Title>Skills</Title>
-        <Desc>Here are some of my skills on which I have been working on for the past 2 years.</Desc>
+        <Desc>
+          Aquí están algunas de las habilidades en las que he estado trabajando
+          durante los últimos 3 años. 🎯
+        </Desc>
         <SkillsContainer>
           {skills.map((skill, index) => (
             <Skill key={index}>

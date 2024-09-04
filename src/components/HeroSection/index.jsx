@@ -20,18 +20,18 @@ import { Bio } from '../../data/constants';
 
 const HeroSection = () => {
   return (
-    <div id='about'>
+    <div id="about">
       <HeroContainer>
         <HeroBg>
           <HeroBgAnimation />
         </HeroBg>
         <HeroInnerContainer>
-          <HeroLeftContainer id='Left'>
+          <HeroLeftContainer id="Left">
             <Title>
-              Hi, I am <br /> {Bio.name}
+              ¡Hola!👋 Soy <br /> {Bio.name}
             </Title>
             <TextLoop>
-              I am a
+              Soy
               <Span>
                 <Typewriter
                   options={{
@@ -43,12 +43,12 @@ const HeroSection = () => {
               </Span>
             </TextLoop>
             <SubTitle>{Bio.description}</SubTitle>
-            <ResumeButton href={Bio.resume} target='display'>
-              Check Resume
+            <ResumeButton href={Bio.resume} target="display">
+              Ver Currículum
             </ResumeButton>
           </HeroLeftContainer>
-          <HeroRightContainer id='Right'>
-            <Img src={HeroImg} alt='hero-image' />
+          <HeroRightContainer id="Right">
+            <Img src={HeroImg} alt="hero-image" />
           </HeroRightContainer>
         </HeroInnerContainer>
       </HeroContainer>

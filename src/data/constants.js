@@ -17,13 +17,12 @@ import jackImg from '../images/jackimg.jpg';
 export const Bio = {
   name: 'Santiago Galardi',
   roles: [
-    'Full Stack Developer',
-    'Frontend Developer',
-    'Backend Developer',
-    'Programmer',
+    'Desarrollador Full Stack',
+    'Desarrollador Frontend',
+    'Desarrollador Backend',
   ],
   description:
-    'I am a passionate and adaptable developer with a strong focus on delivering quality work. I enjoy learning new skills and taking on challenges, always aiming to improve and contribute effectively. My positive attitude and dedication help me bring value to any project I work on.',
+    'Me apasiona crear aplicaciones web. He trabajado en colaboración con equipos en proyectos desafiantes, donde siempre busco aportar soluciones creativas. Actualmente, colaboro en una productora de música electrónica, donde desarrollo y mejoro su sitio web💻.',
   github: 'https://github.com/santigalardi',
   resume:
     'https://drive.google.com/file/d/1M8bZSQpotaIYwV1Q6yu3dhhb65enpNaA/view?usp=drive_link',
@@ -139,7 +138,7 @@ export const skills = [
   },
 
   {
-    title: 'Others',
+    title: 'Otras',
     skills: [
       {
         name: 'Git',
@@ -182,52 +181,13 @@ export const skills = [
   },
 ];
 
-export const education = [
-  {
-    id: 0,
-    img: 'https://avatars.githubusercontent.com/u/57154655?s=200&v=4',
-    school: 'Henry Bootcamp',
-    date: 'Feb 2023 - Jul 2023',
-    desc: 'I completed the Full Stack Web Developer program at Henry Bootcamp, a rigorous and comprehensive 700-hour training that covered both theoretical and practical aspects of web development. During this immersive experience, I gained proficiency in various cutting-edge technologies and methodologies, enabling me to tackle complex web development challenges effectively.',
-    degree: 'Computer Science and Engineering',
-    cert: henryCert,
-  },
-  {
-    id: 1,
-    img: 'https://pbs.twimg.com/profile_images/1696270326777204736/oF605NLP_400x400.png',
-    school: 'Coderhouse',
-    date: 'Jan 2023 - Mar 2023',
-    desc: 'I earned my React Js certification through Coderhouse, which covered advanced concepts and practical applications of this powerful JavaScript library. This certification represents my proficiency in building dynamic and responsive web applications using React.',
-    degree: 'React Js Certification',
-    cert: reactCert,
-  },
-  {
-    id: 2,
-    img: 'https://pbs.twimg.com/profile_images/1696270326777204736/oF605NLP_400x400.png',
-    school: 'Coderhouse',
-    date: 'Nov 2022 - Jan 2023',
-    desc: 'My JavaScript certification from Coderhouse signifies my expertise in JavaScript, a fundamental programming language for web development. This certification reflects my ability to create interactive and feature-rich web solutions using JavaScript.',
-    degree: 'JavaScript Certification',
-    cert: jsCert,
-  },
-  {
-    id: 3,
-    img: 'https://pbs.twimg.com/profile_images/1696270326777204736/oF605NLP_400x400.png',
-    school: 'Coderhouse',
-    date: 'Sep 2022 - Nov 2022',
-    desc: 'I completed the Web Development certification program at Coderhouse, gaining comprehensive knowledge and hands-on experience in various web development technologies. This certification showcases my skills in building and deploying web applications effectively.',
-    degree: 'Web Development Certification',
-    cert: dbCert,
-  },
-];
-
 export const projects = [
   {
     id: 0,
     title: 'Finance SaaS Platform',
-    date: 'Jul 2024 - Aug 2024',
+    date: 'Jul 2024 - Ago 2024',
     description:
-      'Developed a comprehensive Finance SaaS Platform that enables users to track income and expenses, categorize transactions, and import CSV files for bulk transactions. The platform features an interactive financial dashboard, customizable filters, and detailed transaction management. Built with Next.js 14, TailwindCSS, and PostgreSQL, the application integrates state management with Tanstack React Query, an API powered by Hono.js, and authentication via Clerk.',
+      'Desarrollé una plataforma financiera intuitiva que permite a los usuarios gestionar sus ingresos y gastos de manera eficiente. Implementé un panel de control interactivo con visualizaciones de datos y filtros avanzados, lo que permite a los usuarios personalizar la vista de sus transacciones. También creé un sistema para importar y procesar grandes volúmenes de transacciones mediante archivos CSV, facilitando la gestión masiva de datos. Me enfoqué en optimizar la experiencia del usuario, simplificando la navegación y asegurando una rápida accesibilidad a las funciones clave.',
     image: financePlatformImg,
     tags: [
       'React',
@@ -245,9 +205,9 @@ export const projects = [
   {
     id: 1,
     title: 'Ravela',
-    date: 'Jun 2023 - Present',
+    date: 'Jun 2023 - Presente',
     description:
-      'Developed Ravela, a platform that boosts emerging LATAM DJs by elevating their visibility and audience through innovative music events and digital media. Built with Next.js and Supabase, the platform includes user authentication, event management, video set submissions, and a custom video player for an enhanced user experience.',
+      'Desarrollé Ravela, una plataforma que impulsa a DJs emergentes de LATAM al aumentar su visibilidad y audiencia a través de eventos de música innovadores y producciones digitales. Creé formularios interactivos para la inscripción en concursos y la presentación de sets de video, mejorando la participación y gestión de eventos. Implementé Clerk para la autenticación, garantizando una experiencia de usuario segura y eficiente.',
     image: ravelaImg,
     tags: ['React', 'Next.js', 'Typescript', 'Supabase', 'Clerk', 'Tailwind'],
     category: 'web app',
@@ -259,7 +219,7 @@ export const projects = [
     title: 'Spotify Clone',
     date: 'Feb 2024 - Mar 2024',
     description:
-      'Developed a Spotify clone using React, Next.js, and Supabase, including music streaming functionalities, user authentication, and Stripe payment integration.',
+      'Desarrollé un clon de Spotify que permite a los usuarios transmitir música, gestionar sus listas de reproducción y explorar una amplia biblioteca musical. Implementé funcionalidades de autenticación de usuarios y un sistema de pago para suscripciones premium. Me enfoqué en crear una experiencia de usuario fluida y atractiva, asegurando una integración eficiente de todas las características clave.',
     image: spotifyClone,
     tags: ['React', 'Next.js', 'Supabase', 'Stripe', 'Tailwind'],
     category: 'web app',
@@ -271,9 +231,16 @@ export const projects = [
     title: 'KrowTI',
     date: 'Oct 2023 - Mar 2024',
     description:
-      'IT-focused job search platform connecting recruiters, companies, and candidates.',
+      'Colaboré en el desarrollo de KrowTI, una plataforma de búsqueda de empleo especializada en TI que conecta a reclutadores, empresas y candidatos. Contribuí en la implementación de un sistema de gestión de perfiles para que los candidatos muestren sus habilidades y experiencia, y para que los reclutadores encuentren y contacten a los candidatos ideales. También participé en el diseño del flujo de trabajo para la publicación de ofertas de empleo y la aplicación a las mismas, y ayudé en la integración de suscripciones para planes de contratación, facilitando la gestión de las necesidades de reclutamiento de las empresas.',
     image: krowtiImg,
-    tags: ['React', 'Typescript', 'Redux Toolkit', 'Node Js', 'Tailwind'],
+    tags: [
+      'React',
+      'Typescript',
+      'Redux Toolkit',
+      'Node Js',
+      'AWS',
+      'Styled Components',
+    ],
     category: 'web app',
     github: 'https://gitlab.hostyweb.cl/krowti/krowti-frontend',
     webapp: 'https://staging.krowti.com/iniciar-sesion',
@@ -283,7 +250,7 @@ export const projects = [
     title: 'The Art Gallery',
     date: 'Jun 2023 - Jul 2023',
     description:
-      'The Art Gallery is a website where users can view, purchase, and sell digital artworks. Basic design principles and styles (UX:UI) were applied, along with the practice of GIT workflow. I collaborated with the team to implement features such as third-party authentication, search filters, and artwork reviews.',
+      'La Galería de Arte es un sitio web donde los usuarios pueden visualizar, comprar y vender obras de arte digitales. Contribuí al proyecto colaborando con el equipo en la implementación de características como autenticación de terceros, filtros de búsqueda y reseñas de obras de arte. Utilicé flujos de trabajo de GIT para gestionar el desarrollo del proyecto.',
     image: artGalleryImg,
     tags: ['React', 'Redux', 'Node', 'Bootstrap', 'PayPal', 'PostgreSQL'],
     category: 'web app',
@@ -321,7 +288,6 @@ export const projects = [
         linkedin: 'https://www.linkedin.com/in/alex-robert-calapuja-quispe/',
         github: 'https://github.com/alexrobertCQ',
       },
-
       {
         name: 'Jhon Daniel Rojas',
         img: 'https://avatars.githubusercontent.com/u/120231023?v=4',
@@ -333,9 +299,9 @@ export const projects = [
   {
     id: 5,
     title: 'Game Atlas',
-    date: 'Apr 2023 - May 2023',
+    date: 'Abr 2023 - May 2023',
     description:
-      'Designed and developed a SPA showcasing a dynamic video game gallery. Users can explore a widevariety of titles and even contribute by creating their own video games through a form with validations. Theapplication provides genre filters, sorting options, and a search bar to enhance the user experience.',
+      'Diseñé y desarrollé una SPA que presenta una galería dinámica de videojuegos. Los usuarios pueden explorar una amplia variedad de títulos y contribuir creando sus propios videojuegos mediante un formulario con validaciones. La aplicación ofrece filtros por género, opciones de clasificación y una barra de búsqueda para mejorar la experiencia del usuario.',
     image: gameAtlasImg,
     tags: [
       'React Js',
@@ -353,9 +319,9 @@ export const projects = [
   {
     id: 6,
     title: 'Rick & Morty App',
-    date: 'Feb 2023 - Apr 2023',
+    date: 'Feb 2023 - Abr 2023',
     description:
-      'I developed the Rick & Morty App, a SPA that allows users to explore and add characters from the famous series to an interactive gallery. I implemented an efficient search bar to add new characters and a function to include them in a favorites list with filtering and sorting options. Additionally, I designed a controlled login form to ensure a secure and personalized experience.',
+      'Desarrollé la Rick & Morty App, una SPA que permite a los usuarios explorar y añadir personajes de la famosa serie a una galería interactiva. Implementé una barra de búsqueda eficiente para agregar nuevos personajes y una función para incluirlos en una lista de favoritos con opciones de filtrado y clasificación. Además, diseñé un formulario de inicio de sesión controlado para garantizar una experiencia segura y personalizada.',
     image: rickAndMortyImg,
     tags: ['React Js', 'Redux', 'CSS', 'Node Js', 'Express Js'],
     category: 'web app',
@@ -365,9 +331,9 @@ export const projects = [
   {
     id: 7,
     title: 'Infinity Games',
-    date: 'Jan 2023 - Mar 2023',
+    date: 'Ene 2023 - Mar 2023',
     description:
-      'I designed and developed Infinity Games, a SPA that simulates an e-commerce platform for video games, providing users with an immersive experience. I implemented categories to facilitate exploration, as well as detailed information to offer relevant insights. The application manages product stock through Firebase, ensuring real-time availability. Infinity Games stands out for its intuitive interface and exceptional functionality.',
+      'Diseñé y desarrollé Infinity Games, una SPA que simula una plataforma de comercio electrónico para videojuegos, ofreciendo a los usuarios una experiencia inmersiva. Implementé categorías para facilitar la exploración y proporcioné información detallada para ofrecer perspectivas relevantes. La aplicación gestiona el stock de productos a través de Firebase, asegurando disponibilidad en tiempo real. Infinity Games se destaca por su interfaz intuitiva y su funcionalidad excepcional.',
     image: infinityGamesImg,
     tags: ['React Js', 'CSS', 'Bootstrap', 'Firebase'],
     category: 'web app',
@@ -377,14 +343,53 @@ export const projects = [
   {
     id: 8,
     title: "Jack & Johnson's",
-    date: 'Nov 2022 - Jan 2023',
+    date: 'Nov 2022 - Ene 2023',
     description:
-      'I developed a realistic and user-friendly microphone e-commerce simulator. I implemented an authentication system using localStorage for users and a functional shopping cart, allowing them to add and remove products, as well as empty the cart and proceed with the purchase. The application features a wide variety of simulated microphones presented in the form of cards, providing an intuitive interface to navigate through the available products.',
+      'Desarrollé un simulador de comercio electrónico de micrófonos realista y fácil de usar. Implementé un sistema de autenticación utilizando localStorage para los usuarios y un carrito de compras funcional, permitiendo agregar y eliminar productos, así como vaciar el carrito y proceder con la compra. La aplicación presenta una amplia variedad de micrófonos simulados en forma de tarjetas, ofreciendo una interfaz intuitiva para navegar por los productos disponibles.',
     image: jackImg,
     tags: ['HTML', 'CSS', 'JavaScript'],
     category: 'web app',
     github: 'https://github.com/santigalardi/Javascript-Ecommerce',
     webapp: 'https://javascript-ecommerce-seven.vercel.app/',
+  },
+];
+
+export const education = [
+  {
+    id: 0,
+    img: 'https://avatars.githubusercontent.com/u/57154655?s=200&v=4',
+    school: 'Henry Bootcamp',
+    date: 'Feb 2023 - Jul 2023',
+    desc: 'Completé el programa de Desarrollador Web Full Stack en Henry Bootcamp, una formación rigurosa y completa de 700 horas que abarcó aspectos teóricos y prácticos del desarrollo web. Durante esta experiencia inmersiva, adquirí competencia en diversas tecnologías y metodologías de vanguardia, lo que me permitió abordar desafíos complejos en el desarrollo web de manera efectiva.',
+    degree: 'Desarrollador Web Full Stack',
+    cert: henryCert,
+  },
+  {
+    id: 1,
+    img: 'https://pbs.twimg.com/profile_images/1696270326777204736/oF605NLP_400x400.png',
+    school: 'Coderhouse',
+    date: 'Ene 2023 - Mar 2023',
+    desc: 'Obtuve mi certificación en React Js a través de Coderhouse, que cubrió conceptos avanzados y aplicaciones prácticas de esta poderosa biblioteca de JavaScript. Esta certificación representa mi competencia en la creación de aplicaciones web dinámicas y responsivas utilizando React.',
+    degree: 'Certificación en React Js',
+    cert: reactCert,
+  },
+  {
+    id: 2,
+    img: 'https://pbs.twimg.com/profile_images/1696270326777204736/oF605NLP_400x400.png',
+    school: 'Coderhouse',
+    date: 'Nov 2022 - Ene 2023',
+    desc: 'Mi certificación en JavaScript de Coderhouse refleja mi experiencia en JavaScript, un lenguaje fundamental para el desarrollo web. Esta certificación muestra mi capacidad para crear soluciones web interactivas.',
+    degree: 'Certificación en JavaScript',
+    cert: jsCert,
+  },
+  {
+    id: 3,
+    img: 'https://pbs.twimg.com/profile_images/1696270326777204736/oF605NLP_400x400.png',
+    school: 'Coderhouse',
+    date: 'Sep 2022 - Nov 2022',
+    desc: 'Completé el programa de certificación en Desarrollo Web en Coderhouse, obteniendo conocimientos exhaustivos y experiencia práctica en diversas tecnologías de desarrollo web. Esta certificación destaca mis habilidades en la construcción y despliegue efectivo de aplicaciones web.',
+    degree: 'Certificación en Desarrollo Web',
+    cert: dbCert,
   },
 ];
 

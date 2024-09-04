@@ -87,10 +87,10 @@ function Footer() {
       <FooterWrapper>
         <Logo>Santiago Galardi</Logo>
         <Nav>
-          <NavLink href="#about">About</NavLink>
+          <NavLink href="#about">Sobre Mí</NavLink>
           <NavLink href="#skills">Skills</NavLink>
-          <NavLink href="#projects">Projects</NavLink>
-          <NavLink href="#education">Education</NavLink>
+          <NavLink href="#projects">Proyectos</NavLink>
+          <NavLink href="#education">Educación</NavLink>
         </Nav>
         <SocialMediaIcons>
           <SocialMediaIcon href={Bio.linkedin} target="display">
@@ -100,9 +100,7 @@ function Footer() {
             <GitHubIcon />
           </SocialMediaIcon>
         </SocialMediaIcons>
-        <Copyright>
-          &copy; 2024 Santiago Galardi. All rights reserved.
-        </Copyright>
+        <Copyright>Santiago Galardi &copy; 2024</Copyright>
       </FooterWrapper>
     </FooterContainer>
   );

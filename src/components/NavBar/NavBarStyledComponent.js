@@ -61,9 +61,9 @@ export const NavLink = styled.a`
   color: ${({ theme }) => theme.text_primary};
   font-weight: 500;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
   text-decoration: none;
-  :hover {
+  transition: color 0.2s ease-in-out;
+  &:hover {
     color: ${({ theme }) => theme.primary};
   }
 
@@ -133,7 +133,8 @@ export const MobileMenu = styled.div`
   padding: 12px 40px 24px 40px;
   background: ${({ theme }) => theme.card_light + 99};
   transition: all 0.6s ease-in-out;
-  transform: ${({ isOpen }) => (isOpen ? 'translateY(0)' : 'translateY(-100%)')};
+  transform: ${({ isOpen }) =>
+    isOpen ? 'translateY(0)' : 'translateY(-100%)'};
   border-radius: 0 0 20px 20px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};

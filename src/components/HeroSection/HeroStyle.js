@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-// import _default from '../../themes/default';
 
 export const HeroContainer = styled.div`
   background: ${({ theme }) => theme.card_light};
@@ -154,7 +153,7 @@ export const SubTitle = styled.div`
   font-size: 20px;
   line-height: 32px;
   margin-bottom: 42px;
-  color: ${({ theme }) => theme.text_primary + 95};
+  color: ${({ theme }) => theme.text_secondary};
 
   @media (max-width: 960px) {
     text-align: center;

@@ -61,10 +61,10 @@ const Navbar = () => {
           />
         </MobileIcon>
         <NavItems>
-          <NavLink href="#about">About</NavLink>
+          <NavLink href="#about">Sobre Mí</NavLink>
           <NavLink href="#skills">Skills</NavLink>
-          <NavLink href="#projects">Projects</NavLink>
-          <NavLink href="#education">Education</NavLink>
+          <NavLink href="#projects">Proyectos</NavLink>
+          <NavLink href="#education">Educación</NavLink>
         </NavItems>
         <ButtonContainer>
           <SocialMediaIcons>
@@ -84,7 +84,7 @@ const Navbar = () => {
                 setIsOpen(!isOpen);
               }}
             >
-              About
+              Sobre Mí
             </MobileLink>
             <MobileLink
               href="#skills"
@@ -100,7 +100,7 @@ const Navbar = () => {
                 setIsOpen(!isOpen);
               }}
             >
-              Projects
+              Proyectos
             </MobileLink>
             <MobileLink
               href="#education"
@@ -108,7 +108,7 @@ const Navbar = () => {
                 setIsOpen(!isOpen);
               }}
             >
-              Education
+              Educación
             </MobileLink>
             <SocialMediaIcons>
               <SocialMediaIcon href={Bio.linkedin} target="display">
