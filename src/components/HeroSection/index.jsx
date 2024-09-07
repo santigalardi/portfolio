@@ -3,6 +3,7 @@ import {
   HeroContainer,
   HeroBg,
   HeroLeftContainer,
+  ImgMobile,
   Img,
   HeroRightContainer,
   HeroInnerContainer,
@@ -14,7 +15,7 @@ import {
   // SocialMediaIcon,
   ResumeButton,
 } from './HeroStyle';
-import HeroImg from '../../images/HeroImage.png';
+import HeroImg from '../../images/mockup1.png';
 import Typewriter from 'typewriter-effect';
 import { Bio } from '../../data/constants';
 
@@ -28,10 +29,10 @@ const HeroSection = () => {
         <HeroInnerContainer>
           <HeroLeftContainer id="Left">
             <Title>
-              ¡Hola!👋 Soy <br /> {Bio.name}
+              ¡Hola!👋 Soy <br />
+              {Bio.name}
             </Title>
             <TextLoop>
-              Soy
               <Span>
                 <Typewriter
                   options={{
@@ -42,6 +43,7 @@ const HeroSection = () => {
                 />
               </Span>
             </TextLoop>
+            <ImgMobile src={HeroImg} alt="hero-image" />
             <SubTitle>{Bio.description}</SubTitle>
             <ResumeButton href={Bio.resume} target="display">
               Ver Currículum

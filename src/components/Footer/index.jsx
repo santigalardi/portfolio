@@ -75,7 +75,7 @@ const SocialMediaIcon = styled.a`
 `;
 
 const Copyright = styled.p`
-  margin-top: 1.5rem;
+  margin-top: 10px;
   font-size: 0.9rem;
   color: ${({ theme }) => theme.soft2};
   text-align: center;
@@ -100,6 +100,7 @@ function Footer() {
             <GitHubIcon />
           </SocialMediaIcon>
         </SocialMediaIcons>
+        <Copyright>santygalardi@gmail.com</Copyright>
         <Copyright>Santiago Galardi &copy; 2024</Copyright>
       </FooterWrapper>
     </FooterContainer>
