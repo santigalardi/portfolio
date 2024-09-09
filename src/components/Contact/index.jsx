@@ -163,15 +163,12 @@ const Contact = () => {
     formData.message;
 
   return (
-    <Container id="Education">
+    <Container id="contact">
       <Wrapper>
         <Title>Contacto</Title>
-        <Desc
-          style={{
-            marginBottom: '40px',
-          }}
-        >
+        <Desc>
           ¡No dudes en contactarme para cualquier consulta u oportunidad!
+          comunic
         </Desc>
         <ContactForm ref={form} onSubmit={handleSubmit}>
           <ContactTitle>Envíame un correo 🚀</ContactTitle>
@@ -183,7 +180,7 @@ const Contact = () => {
             required
           />
           <ContactInput
-            placeholder="Tu Name"
+            placeholder="Tu Nombre"
             name="user_name"
             value={formData.user_name}
             onChange={handleChange}

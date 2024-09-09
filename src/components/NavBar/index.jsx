@@ -65,6 +65,7 @@ const Navbar = () => {
           <NavLink href="#skills">Skills</NavLink>
           <NavLink href="#projects">Proyectos</NavLink>
           <NavLink href="#education">Educación</NavLink>
+          <NavLink href="#contact">Contacto</NavLink>
         </NavItems>
         <ButtonContainer>
           <SocialMediaIcons>
@@ -109,6 +110,14 @@ const Navbar = () => {
               }}
             >
               Educación
+            </MobileLink>
+            <MobileLink
+              href="#contact"
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+            >
+              Contacto
             </MobileLink>
             <SocialMediaIcons>
               <SocialMediaIcon href={Bio.linkedin} target="display">

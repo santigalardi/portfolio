@@ -52,7 +52,7 @@ export const NavItems = styled.ul`
   padding: 0 6px;
   list-style: none;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 960px) {
     display: none;
   }
 `;
@@ -62,6 +62,7 @@ export const NavLink = styled.a`
   font-weight: 500;
   cursor: pointer;
   text-decoration: none;
+  white-space: nowrap;
   transition: color 0.2s ease-in-out;
   &:hover {
     color: ${({ theme }) => theme.primary};
@@ -90,7 +91,7 @@ export const GitHubButton = styled.a`
     background: ${({ theme }) => theme.primary};
     color: ${({ theme }) => theme.white};
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 960px) {
     font-size: 14px;
   }
 `;
@@ -102,14 +103,14 @@ export const ButtonContainer = styled.div`
   justify-content: end;
   align-items: center;
   padding: 0 6px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 960px) {
     display: none;
   }
 `;
 
 export const MobileIcon = styled.div`
   display: none;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 960px) {
     display: block;
     position: absolute;
     top: 0;
