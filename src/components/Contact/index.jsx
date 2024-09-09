@@ -167,8 +167,7 @@ const Contact = () => {
       <Wrapper>
         <Title>Contacto</Title>
         <Desc>
-          ¡No dudes en contactarme para cualquier consulta u oportunidad!
-          comunic
+          ¡No dudes en contactarme para cualquier consulta u oportunidad! 📧
         </Desc>
         <ContactForm ref={form} onSubmit={handleSubmit}>
           <ContactTitle>Envíame un correo 🚀</ContactTitle>
