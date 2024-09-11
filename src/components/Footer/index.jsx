@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import { Bio } from '../../data/constants';
+import { BioEs, translations } from '../../data/constants';
+import LanguageContext from '../../context/LanguageContext';
+import { useContext } from 'react';
 
 const FooterContainer = styled.div`
   width: 100%;
@@ -82,21 +84,25 @@ const Copyright = styled.p`
 `;
 
 function Footer() {
+  const { language } = useContext(LanguageContext);
+  const navText = translations[language];
+
   return (
     <FooterContainer>
       <FooterWrapper>
         <Logo>Santiago Galardi</Logo>
         <Nav>
-          <NavLink href="#about">Sobre Mí</NavLink>
-          <NavLink href="#skills">Skills</NavLink>
-          <NavLink href="#projects">Proyectos</NavLink>
-          <NavLink href="#education">Educación</NavLink>
+          <NavLink href="#about">{navText.about}</NavLink>
+          <NavLink href="#skills">{navText.skills}</NavLink>
+          <NavLink href="#projects">{navText.projects}</NavLink>
+          <NavLink href="#education">{navText.education}</NavLink>
+          <NavLink href="#contact">{navText.contact}</NavLink>
         </Nav>
         <SocialMediaIcons>
-          <SocialMediaIcon href={Bio.linkedin} target="display">
+          <SocialMediaIcon href={BioEs.linkedin} target="display">
             <LinkedInIcon />
           </SocialMediaIcon>
-          <SocialMediaIcon href={Bio.github} target="display">
+          <SocialMediaIcon href={BioEs.github} target="display">
             <GitHubIcon />
           </SocialMediaIcon>
         </SocialMediaIcons>

@@ -11,9 +11,10 @@ import Footer from './components/Footer';
 import Education from './components/Education';
 import ProjectDetails from './components/ProjectDetails';
 import styled from 'styled-components';
-import './App.css';
 import EarthCanvas from './components/Canvas/Earth.jsx';
 import { Toaster } from 'sonner';
+import LanguageProvider from './context/LanguageProvider.jsx';
+import './App.css';
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -41,29 +42,34 @@ function App() {
   const [openModal, setOpenModal] = useState({ state: false, project: null });
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
-      <Router>
-        <Navbar />
-        <Body>
-          <HeroSection />
-          <Wrapper>
-            <Skills />
-            {/* <Experience /> */}
-          </Wrapper>
-          <Projects openModal={openModal} setOpenModal={setOpenModal} />
-          <Wrapper>
-            <Education />
-          </Wrapper>
-          <Wrapper>
-            <EarthCanvas />
-            <Contact />
-          </Wrapper>
-          <Toaster position="bottom-right" richColors />
-          <Footer />
-          {openModal.state && (
-            <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
-          )}
-        </Body>
-      </Router>
+      <LanguageProvider>
+        <Router>
+          <Navbar />
+          <Body>
+            <HeroSection />
+            <Wrapper>
+              <Skills />
+              {/* <Experience /> */}
+            </Wrapper>
+            <Projects openModal={openModal} setOpenModal={setOpenModal} />
+            <Wrapper>
+              <Education />
+            </Wrapper>
+            <Wrapper>
+              <EarthCanvas />
+              <Contact />
+            </Wrapper>
+            <Toaster position="bottom-right" richColors />
+            <Footer />
+            {openModal.state && (
+              <ProjectDetails
+                openModal={openModal}
+                setOpenModal={setOpenModal}
+              />
+            )}
+          </Body>
+        </Router>
+      </LanguageProvider>
     </ThemeProvider>
   );
 }

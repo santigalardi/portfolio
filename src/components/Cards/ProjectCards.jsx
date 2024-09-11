@@ -14,24 +14,27 @@ const Button = styled.button`
   cursor: pointer;
   transition: all 0.8s ease-in-out;
 `;
+
 const Card = styled.div`
   width: 330px;
   height: 490px;
   background-color: ${({ theme }) => theme.card};
   cursor: pointer;
   border-radius: 10px;
-  box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: rgba(12, 12, 200, 0.1) 0px 4px 24px;
   overflow: hidden;
   padding: 26px 20px;
   display: flex;
   flex-direction: column;
   gap: 14px;
   transition: all 0.2s ease-in-out;
+
   &:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.6);
-    filter: brightness(1.1);
+    box-shadow: rgba(12, 12, 200, 0.2) 0px 6px 30px;
+    filter: brightness(1.05);
   }
+
   &:hover ${Button} {
     display: block;
   }
@@ -134,11 +137,6 @@ const ProjectCards = ({ project, setOpenModal }) => {
         <Date>{project.date}</Date>
         <Description>{project.description}</Description>
       </Details>
-      {/* <Members>
-        {project.member?.map((member, index) => (
-          <Avatar src={member.img} key={index} />
-        ))}
-      </Members> */}
     </Card>
   );
 };

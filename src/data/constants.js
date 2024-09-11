@@ -14,7 +14,7 @@ import rickAndMortyImg from '../images/rickandmortyimg.jpg';
 import infinityGamesImg from '../images/infinitygamesimg.jpg';
 import jackImg from '../images/jackimg.jpg';
 
-export const Bio = {
+export const BioEs = {
   name: 'Santiago Galardi',
   roles: [
     'Desarrollador Full Stack',
@@ -29,9 +29,21 @@ export const Bio = {
   linkedin: 'https://www.linkedin.com/in/santigalardi/',
 };
 
+export const BioEn = {
+  name: 'Santiago Galardi',
+  roles: ['Full Stack Developer', 'Frontend Developer', 'Backend Developer'],
+  description:
+    'I am passionate about creating web applications. I have collaborated on challenging projects, always striving to contribute creative solutions. Currently, I work with an electronic music production company, developing and improving their website💻.',
+  github: 'https://github.com/santigalardi',
+  resume:
+    'https://drive.google.com/file/d/1YhjKlBiDCHark8REb2RYrR-MAGKYX9We/view?usp=drive_link',
+  linkedin: 'https://www.linkedin.com/in/santigalardi/',
+};
+
 export const skills = [
   {
     title: 'Frontend',
+    titleEn: 'Frontend',
     skills: [
       {
         name: 'React Js',
@@ -91,6 +103,7 @@ export const skills = [
   },
   {
     title: 'Backend',
+    titleEn: 'Backend',
     skills: [
       {
         name: 'Node Js',
@@ -139,6 +152,7 @@ export const skills = [
 
   {
     title: 'Otras',
+    titleEn: 'Others',
     skills: [
       {
         name: 'Git',
@@ -181,7 +195,7 @@ export const skills = [
   },
 ];
 
-export const projects = [
+export const projectsEs = [
   {
     id: 0,
     title: 'Finance SaaS Platform',
@@ -354,7 +368,180 @@ export const projects = [
   },
 ];
 
-export const education = [
+export const projectsEn = [
+  {
+    id: 0,
+    title: 'Finance SaaS Platform',
+    date: 'Jul 2024 - Aug 2024',
+    description:
+      'I developed an intuitive financial platform that allows users to efficiently manage their income and expenses. I implemented an interactive dashboard with data visualizations and advanced filters, enabling users to customize the view of their transactions. I also created a system to import and process large volumes of transactions via CSV files, simplifying bulk data management. My focus was on optimizing the user experience by streamlining navigation and ensuring quick access to key features.',
+    image: financePlatformImg,
+    tags: [
+      'React',
+      'Next.js',
+      'TypeScript',
+      'Clerk',
+      'Tailwind',
+      'Drizzle ORM',
+      'Hono.js',
+    ],
+    category: 'web app',
+    github: 'https://github.com/santigalardi/finance-platform',
+    webapp: 'https://finance-platform-alpha.vercel.app/',
+  },
+  {
+    id: 1,
+    title: 'Ravela',
+    date: 'Jun 2023 - Present',
+    description:
+      'I developed Ravela, a platform that empowers emerging DJs from LATAM by increasing their visibility and audience through innovative music events and digital productions. I created interactive forms for contest registration and video set submissions, enhancing event participation and management. I implemented Clerk for authentication, ensuring a secure and efficient user experience.',
+    image: ravelaImg,
+    tags: ['React', 'Next.js', 'Typescript', 'Supabase', 'Clerk', 'Tailwind'],
+    category: 'web app',
+    github: 'https://github.com/santigalardi/ravela',
+    webapp: 'https://ravela.com.ar/',
+  },
+  {
+    id: 2,
+    title: 'Spotify Clone',
+    date: 'Feb 2024 - Mar 2024',
+    description:
+      'I developed a Spotify clone that allows users to stream music, manage playlists, and explore a vast music library. I implemented user authentication features and a payment system for premium subscriptions. I focused on creating a smooth and engaging user experience, ensuring efficient integration of all key features.',
+    image: spotifyClone,
+    tags: ['React', 'Next.js', 'Supabase', 'Stripe', 'Tailwind'],
+    category: 'web app',
+    github: 'https://github.com/santigalardi/spotify-clone',
+    webapp: 'https://spotify-clone-santigalardis-projects.vercel.app',
+  },
+  {
+    id: 3,
+    title: 'KrowTI',
+    date: 'Oct 2023 - Mar 2024',
+    description:
+      'I collaborated on the development of KrowTI, a job search platform specialized in IT that connects recruiters, companies, and candidates. I contributed to implementing a profile management system, allowing candidates to showcase their skills and experience, and enabling recruiters to find and contact ideal candidates. I also participated in designing the workflow for posting job listings and applying to them, and assisted in integrating subscription plans for hiring, streamlining the management of companies& recruitment needs.',
+    image: krowtiImg,
+    tags: [
+      'React',
+      'Typescript',
+      'Redux Toolkit',
+      'Node Js',
+      'AWS',
+      'Styled Components',
+    ],
+    category: 'web app',
+    github: 'https://gitlab.hostyweb.cl/krowti/krowti-frontend',
+    webapp: 'https://staging.krowti.com/iniciar-sesion',
+  },
+  {
+    id: 4,
+    title: 'The Art Gallery',
+    date: 'Jun 2023 - Jul 2023',
+    description:
+      'The Art Gallery is a website where users can view, buy, and sell digital artwork. I contributed to the project by collaborating with the team on implementing features such as third-party authentication, search filters, and artwork reviews. I used GIT workflows to manage the project&apos;s development.',
+    image: artGalleryImg,
+    tags: ['React', 'Redux', 'Node', 'Bootstrap', 'PayPal', 'PostgreSQL'],
+    category: 'web app',
+    github: 'https://github.com/santigalardi/PF-Arts-Client',
+    // webapp: 'https://pf-arts-client.vercel.app/',
+    member: [
+      {
+        name: 'Santiago Galardi',
+        img: 'https://avatars.githubusercontent.com/u/113655660?v=4',
+        linkedin: 'https://www.linkedin.com/in/santigalardi/',
+        github: 'https://github.com/santigalardi',
+      },
+      {
+        name: 'David Orlando',
+        img: 'https://avatars.githubusercontent.com/u/119124393?v=4',
+        linkedin:
+          'https://www.linkedin.com/in/david-orlando-miranda-roa-7239b0264/',
+        github: 'https://github.com/Davidongo93',
+      },
+      {
+        name: 'Santiago Morales',
+        img: 'https://avatars.githubusercontent.com/u/118409902?v=4',
+        linkedin: 'https://www.linkedin.com/in/morales-santiago/',
+        github: 'https://github.com/Ssamza',
+      },
+      {
+        name: 'Anabella Simonpietri',
+        img: 'https://avatars.githubusercontent.com/u/120821574?v=4',
+        linkedin: 'https://www.linkedin.com/in/anabellasimonpietri/',
+        github: 'https://github.com/AnabellaSimonpietri',
+      },
+      {
+        name: 'Alex Robert',
+        img: 'https://avatars.githubusercontent.com/u/112449168?v=4',
+        linkedin: 'https://www.linkedin.com/in/alex-robert-calapuja-quispe/',
+        github: 'https://github.com/alexrobertCQ',
+      },
+      {
+        name: 'Jhon Daniel Rojas',
+        img: 'https://avatars.githubusercontent.com/u/120231023?v=4',
+        linkedin: 'https://www.linkedin.com/in/jhon-daniel-rojas/',
+        github: 'https://github.com/JhonDaniel01',
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: 'Game Atlas',
+    date: 'Apr 2023 - May 2023',
+    description:
+      'I designed and developed a SPA that showcases a dynamic video game gallery. Users can explore a wide range of titles and contribute by creating their own video games through a form with validations. The application offers filters by genre, sorting options, and a search bar to enhance the user experience.',
+    image: gameAtlasImg,
+    tags: [
+      'React Js',
+      'Redux',
+      'CSS',
+      'Node Js',
+      'Express Js',
+      'PostgreSQL',
+      'Sequelize',
+    ],
+    category: 'web app',
+    github: 'https://github.com/santigalardi/PI-videogames',
+    // webapp: 'https://pi-videogames-client-rho.vercel.app/',
+  },
+  {
+    id: 6,
+    title: 'Rick & Morty App',
+    date: 'Feb 2023 - Apr 2023',
+    description:
+      'I developed the Rick & Morty App, a SPA that allows users to explore and add characters from the famous series to an interactive gallery. I implemented an efficient search bar for adding new characters and a feature to include them in a favorites list with filtering and sorting options. Additionally, I designed a controlled login form to ensure a secure and personalized experience.',
+    image: rickAndMortyImg,
+    tags: ['React Js', 'Redux', 'CSS', 'Node Js', 'Express Js'],
+    category: 'web app',
+    github: 'https://github.com/santigalardi/rick_and_morty-client',
+    webapp: 'https://rick-and-morty-client-git-main-santigalardi.vercel.app/',
+  },
+  {
+    id: 7,
+    title: 'Infinity Games',
+    date: 'Jan 2023 - Mar 2023',
+    description:
+      'I designed and developed Infinity Games, a SPA that simulates an e-commerce platform for video games, offering users an immersive experience. I implemented categories to facilitate exploration and provided detailed information to offer relevant insights. The application manages product stock through Firebase, ensuring real-time availability. Infinity Games stands out for its intuitive interface and exceptional functionality.',
+    image: infinityGamesImg,
+    tags: ['React Js', 'CSS', 'Bootstrap', 'Firebase'],
+    category: 'web app',
+    github: 'https://github.com/santigalardi/InfinityGames',
+    webapp: 'https://infinity-games.vercel.app/',
+  },
+  {
+    id: 8,
+    title: "Jack & Johnson's",
+    date: 'Nov 2022 - Jan 2023',
+    description:
+      'I developed a realistic and user-friendly e-commerce simulator for microphones. I implemented an authentication system using localStorage for users and a functional shopping cart, allowing users to add and remove products, empty the cart, and proceed with purchases. The application features a wide variety of simulated microphones displayed as cards, providing an intuitive interface for browsing available products.',
+    image: jackImg,
+    tags: ['HTML', 'CSS', 'JavaScript'],
+    category: 'web app',
+    github: 'https://github.com/santigalardi/Javascript-Ecommerce',
+    webapp: 'https://javascript-ecommerce-seven.vercel.app/',
+  },
+];
+
+export const educationEs = [
   {
     id: 0,
     img: 'https://avatars.githubusercontent.com/u/57154655?s=200&v=4',
@@ -392,6 +579,62 @@ export const education = [
     cert: dbCert,
   },
 ];
+
+export const educationEn = [
+  {
+    id: 0,
+    img: 'https://avatars.githubusercontent.com/u/57154655?s=200&v=4',
+    school: 'Henry Bootcamp',
+    date: 'Feb 2023 - Jul 2023',
+    desc: 'I completed the Full Stack Web Developer program at Henry Bootcamp, a rigorous and comprehensive 700-hour training covering both theoretical and practical aspects of web development. During this immersive experience, I gained proficiency in various cutting-edge technologies and methodologies, enabling me to tackle complex web development challenges effectively.',
+    degree: 'Full Stack Web Developer',
+    cert: henryCert,
+  },
+  {
+    id: 1,
+    img: 'https://pbs.twimg.com/profile_images/1696270326777204736/oF605NLP_400x400.png',
+    school: 'Coderhouse',
+    date: 'Jan 2023 - Mar 2023',
+    desc: 'I obtained my certification in React.js through Coderhouse, which covered advanced concepts and practical applications of this powerful JavaScript library. This certification demonstrates my proficiency in creating dynamic and responsive web applications using React.',
+    degree: 'React Js Certification',
+    cert: reactCert,
+  },
+  {
+    id: 2,
+    img: 'https://pbs.twimg.com/profile_images/1696270326777204736/oF605NLP_400x400.png',
+    school: 'Coderhouse',
+    date: 'Nov 2022 - Jan 2023',
+    desc: 'My JavaScript certification from Coderhouse reflects my expertise in JavaScript, a fundamental language for web development. This certification showcases my ability to create interactive web solutions.',
+    degree: 'JavaScript Certification',
+    cert: jsCert,
+  },
+  {
+    id: 3,
+    img: 'https://pbs.twimg.com/profile_images/1696270326777204736/oF605NLP_400x400.png',
+    school: 'Coderhouse',
+    date: 'Sep 2022 - Nov 2022',
+    desc: 'I completed the Web Development certification program at Coderhouse, gaining comprehensive knowledge and practical experience in various web development technologies. This certification highlights my skills in effectively building and deploying web applications.',
+    degree: 'Web Development Certification',
+    cert: dbCert,
+  },
+];
+
+export const translations = {
+  es: {
+    about: 'Sobre Mí',
+    skills: 'Tecnologías',
+    projects: 'Proyectos',
+    education: 'Educación',
+    contact: 'Contacto',
+  },
+  en: {
+    about: 'About Me',
+    skills: 'Technologies',
+    projects: 'Projects',
+    education: 'Education',
+    contact: 'Contact',
+  },
+};
 
 // export const TimeLineData = [
 //   { year: 2017, text: 'Started my journey' },

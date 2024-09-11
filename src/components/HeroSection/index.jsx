@@ -17,9 +17,14 @@ import {
 } from './HeroStyle';
 import HeroImg from '../../images/mockup1.png';
 import Typewriter from 'typewriter-effect';
-import { Bio } from '../../data/constants';
+import { BioEs, BioEn } from '../../data/constants';
+import LanguageContext from '../../context/LanguageContext';
+import { useContext } from 'react';
 
 const HeroSection = () => {
+  const { language } = useContext(LanguageContext);
+  const Bio = language === 'es' ? BioEs : BioEn;
+
   return (
     <div id="about">
       <HeroContainer>
@@ -29,7 +34,15 @@ const HeroSection = () => {
         <HeroInnerContainer>
           <HeroLeftContainer id="Left">
             <Title>
-              ¡Hola!👋 Soy <br />
+              {language === 'es' ? (
+                <>
+                  ¡Hola!👋 Soy <br />
+                </>
+              ) : (
+                <>
+                  Hello! 👋 I am <br />
+                </>
+              )}
               {Bio.name}
             </Title>
             <TextLoop>
@@ -46,7 +59,7 @@ const HeroSection = () => {
             <ImgMobile src={HeroImg} alt="hero-image" />
             <SubTitle>{Bio.description}</SubTitle>
             <ResumeButton href={Bio.resume} target="display">
-              Ver Currículum
+              {language === 'es' ? 'Ver Curriculum' : 'View Resume'}
             </ResumeButton>
           </HeroLeftContainer>
           <HeroRightContainer id="Right">

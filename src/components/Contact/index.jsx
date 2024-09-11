@@ -1,7 +1,8 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useContext } from 'react';
 import styled from 'styled-components';
 import emailjs from '@emailjs/browser';
 import { toast } from 'sonner';
+import LanguageContext from '../../context/LanguageContext';
 
 const Container = styled.div`
   display: flex;
@@ -117,6 +118,7 @@ const ContactButton = styled.input`
 
 const Contact = () => {
   const form = useRef();
+  const { language } = useContext(LanguageContext);
   const [formData, setFormData] = useState({
     user_email: '',
     user_name: '',
@@ -165,42 +167,50 @@ const Contact = () => {
   return (
     <Container id="contact">
       <Wrapper>
-        <Title>Contacto</Title>
+        <Title>{language === 'es' ? 'Contacto' : 'Contact'}</Title>
         <Desc>
-          ¡No dudes en contactarme para cualquier consulta u oportunidad! 📧
+          {language === 'es'
+            ? '¡No dudes en contactarme para cualquier consulta u oportunidad! 💬'
+            : 'Feel free to reach out to me for any inquiries or opportunities! 💬'}
         </Desc>
         <ContactForm ref={form} onSubmit={handleSubmit}>
-          <ContactTitle>Envíame un correo 🚀</ContactTitle>
+          <ContactTitle>
+            {language === 'es' ? 'Envíame un correo 🚀' : 'Send me an Email 🚀'}
+          </ContactTitle>
           <ContactInput
-            placeholder="Tu Email"
+            placeholder={language === 'es' ? 'Tu Email' : 'Your Email'}
             name="user_email"
             value={formData.user_email}
             onChange={handleChange}
             required
           />
           <ContactInput
-            placeholder="Tu Nombre"
+            placeholder={language === 'es' ? 'Tu Nombre' : 'Your Name'}
             name="user_name"
             value={formData.user_name}
             onChange={handleChange}
             required
           />
           <ContactInput
-            placeholder="Asunto"
+            placeholder={language === 'es' ? 'Asunto' : 'Subject'}
             name="subject"
             value={formData.subject}
             onChange={handleChange}
             required
           />
           <ContactInputMessage
-            placeholder="Mensaje"
+            placeholder={language === 'es' ? 'Tu Mensaje' : 'Your Message'}
             name="message"
             value={formData.message}
             onChange={handleChange}
             rows={4}
             required
           />
-          <ContactButton type="submit" value="Enviar" disabled={!isFormValid} />
+          <ContactButton
+            type="submit"
+            value={language === 'es' ? 'Enviar' : 'Send'}
+            disabled={!isFormValid}
+          />
         </ContactForm>
       </Wrapper>
     </Container>

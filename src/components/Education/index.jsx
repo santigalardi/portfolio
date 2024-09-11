@@ -4,7 +4,7 @@ import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
-import { education } from '../../data/constants';
+import { educationEs, educationEn } from '../../data/constants';
 import EducationCard from '../Cards/EducationCard';
 import {
   Container,
@@ -13,15 +13,21 @@ import {
   Desc,
   TimelineSection,
 } from './EducationStyle';
+import { useContext } from 'react';
+import LanguageContext from '../../context/LanguageContext';
 
-const index = () => {
+const Education = () => {
+  const { language } = useContext(LanguageContext);
+  const education = language === 'es' ? educationEs : educationEn;
+
   return (
     <Container id="education">
       <Wrapper>
-        <Title>Educación</Title>
+        <Title>{language === 'es' ? 'Educación' : 'Education'}</Title>
         <Desc>
-          Mi educación ha sido un viaje de autodescubrimiento y crecimiento. A
-          continuación, detallo mi trayectoria educativa. 👨‍🎓
+          {language === 'es'
+            ? 'Mi educación ha sido un viaje de autodescubrimiento y crecimiento. A continuación, detallo mi trayectoria educativa. 👨‍🎓'
+            : 'My education has been a journey of self-discovery and growth. Below, I detail my educational background. 👨‍🎓'}
         </Desc>
         <TimelineSection>
           <Timeline>
@@ -43,4 +49,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Education;

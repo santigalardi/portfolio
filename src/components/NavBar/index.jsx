@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import {
   Nav,
   NavLink,
@@ -13,19 +13,23 @@ import {
 } from './NavBarStyledComponent.js';
 import { DiCssdeck } from 'react-icons/di';
 import { FaBars } from 'react-icons/fa';
-import { Bio } from '../../data/constants';
+import { BioEs, translations } from '../../data/constants';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import styled from 'styled-components';
+import SwitchLanguageButton from '../SwitchLanguageButton/index.jsx';
+import LanguageContext from '../../context/LanguageContext';
 
 const SocialMediaIcons = styled.div`
   display: flex;
-  margin-top: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
 `;
 
 const SocialMediaIcon = styled.a`
   display: inline-block;
-  margin: 0 1rem;
+  margin: 0 10px;
   font-size: 1.5rem;
   color: ${({ theme }) => theme.text_primary};
   transition: color 0.2s ease-in-out;
@@ -34,8 +38,19 @@ const SocialMediaIcon = styled.a`
   }
 `;
 
+const SwitchMobile = styled.div`
+  display: block;
+  margin-right: 20px;
+
+  @media (min-width: 960px) {
+    display: none;
+  }
+`;
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { language } = useContext(LanguageContext);
+  const navText = translations[language];
 
   return (
     <Nav>
@@ -54,25 +69,30 @@ const Navbar = () => {
           </a>
         </NavLogo>
         <MobileIcon>
+          <SwitchMobile>
+            <SwitchLanguageButton />
+          </SwitchMobile>
           <FaBars
+            style={{ color: 'white', cursor: 'pointer' }}
             onClick={() => {
               setIsOpen(!isOpen);
             }}
           />
         </MobileIcon>
         <NavItems>
-          <NavLink href="#about">Sobre Mí</NavLink>
-          <NavLink href="#skills">Skills</NavLink>
-          <NavLink href="#projects">Proyectos</NavLink>
-          <NavLink href="#education">Educación</NavLink>
-          <NavLink href="#contact">Contacto</NavLink>
+          <NavLink href="#about">{navText.about}</NavLink>
+          <NavLink href="#skills">{navText.skills}</NavLink>
+          <NavLink href="#projects">{navText.projects}</NavLink>
+          <NavLink href="#education">{navText.education}</NavLink>
+          <NavLink href="#contact">{navText.contact}</NavLink>
         </NavItems>
         <ButtonContainer>
+          <SwitchLanguageButton />
           <SocialMediaIcons>
-            <SocialMediaIcon href={Bio.linkedin} target="display">
+            <SocialMediaIcon href={BioEs.linkedin} target="display">
               <LinkedInIcon />
             </SocialMediaIcon>
-            <SocialMediaIcon href={Bio.github} target="display">
+            <SocialMediaIcon href={BioEs.github} target="display">
               <GitHubIcon />
             </SocialMediaIcon>
           </SocialMediaIcons>
@@ -85,7 +105,7 @@ const Navbar = () => {
                 setIsOpen(!isOpen);
               }}
             >
-              Sobre Mí
+              {navText.about}
             </MobileLink>
             <MobileLink
               href="#skills"
@@ -93,7 +113,7 @@ const Navbar = () => {
                 setIsOpen(!isOpen);
               }}
             >
-              Skills
+              {navText.skills}
             </MobileLink>
             <MobileLink
               href="#projects"
@@ -101,7 +121,7 @@ const Navbar = () => {
                 setIsOpen(!isOpen);
               }}
             >
-              Proyectos
+              {navText.projects}
             </MobileLink>
             <MobileLink
               href="#education"
@@ -109,7 +129,7 @@ const Navbar = () => {
                 setIsOpen(!isOpen);
               }}
             >
-              Educación
+              {navText.education}
             </MobileLink>
             <MobileLink
               href="#contact"
@@ -117,13 +137,13 @@ const Navbar = () => {
                 setIsOpen(!isOpen);
               }}
             >
-              Contacto
+              {navText.contact}
             </MobileLink>
             <SocialMediaIcons>
-              <SocialMediaIcon href={Bio.linkedin} target="display">
+              <SocialMediaIcon href={BioEs.linkedin} target="display">
                 <LinkedInIcon />
               </SocialMediaIcon>
-              <SocialMediaIcon href={Bio.github} target="display">
+              <SocialMediaIcon href={BioEs.github} target="display">
                 <GitHubIcon />
               </SocialMediaIcon>
             </SocialMediaIcons>

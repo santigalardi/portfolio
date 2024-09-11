@@ -111,13 +111,10 @@ export const ButtonContainer = styled.div`
 export const MobileIcon = styled.div`
   display: none;
   @media screen and (max-width: 960px) {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 1.5rem;
-    cursor: pointer;
     color: ${({ theme }) => theme.text_primary};
   }
 `;

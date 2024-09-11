@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import { skills } from '../../data/constants';
+import { useContext } from 'react';
+import LanguageContext from '../../context/LanguageContext';
 
 const Container = styled.div`
   display: flex;
@@ -116,18 +118,23 @@ const SkillImage = styled.img`
 `;
 
 const Skills = () => {
+  const { language } = useContext(LanguageContext);
+
   return (
     <Container id="skills">
       <Wrapper>
-        <Title>Skills</Title>
+        <Title>{language === 'es' ? 'Tecnologías' : 'Technologies'}</Title>
         <Desc>
-          Aquí están algunas de las habilidades en las que he estado trabajando
-          durante los últimos 3 años. 🎯
+          {language === 'es'
+            ? 'Aquí están algunas de las habilidades en las que he estado trabajando durante los últimos 3 años. 🎯'
+            : 'Here are some of the skills I have been working on over the past 3 years. 🎯'}
         </Desc>
         <SkillsContainer>
           {skills.map((skill, index) => (
             <Skill key={index}>
-              <SkillTitle>{skill.title}</SkillTitle>
+              <SkillTitle>
+                {language === 'es' ? skill.title : skill.titleEn}
+              </SkillTitle>
               <SkillList>
                 {skill.skills.map((item, index) => (
                   <SkillItem key={index}>
