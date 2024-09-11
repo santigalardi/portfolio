@@ -11,8 +11,6 @@ import {
   Title,
   Span,
   SubTitle,
-  // SocialMediaIcons,
-  // SocialMediaIcon,
   ResumeButton,
 } from './HeroStyle';
 import HeroImg from '../../images/mockup1.png';
@@ -59,7 +57,7 @@ const HeroSection = () => {
             <ImgMobile src={HeroImg} alt="hero-image" />
             <SubTitle>{Bio.description}</SubTitle>
             <ResumeButton href={Bio.resume} target="display">
-              {language === 'es' ? 'Ver Curriculum' : 'View Resume'}
+              {language === 'es' ? 'Ver Currículum' : 'View Resume'}
             </ResumeButton>
           </HeroLeftContainer>
           <HeroRightContainer id="Right">

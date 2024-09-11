@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { skills } from '../../data/constants';
 import { useContext } from 'react';
 import LanguageContext from '../../context/LanguageContext';
+import Reveal from '../Reveal/Reveal';
 
 const Container = styled.div`
   display: flex;
@@ -61,14 +62,16 @@ const Skill = styled.div`
   width: 100%;
   max-width: 500px;
   background: ${({ theme }) => theme.card};
-  border: 0.1px solid #854ce6;
-  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+  border: 0.1px solid ${({ theme }) => theme.primary + 80};
+  box-shadow: ${({ theme }) => theme.primary + 70} 0px 2px 8px;
   border-radius: 16px;
   padding: 10px 20px;
+
   @media (max-width: 768px) {
     max-width: 400px;
     padding: 10px 36px;
   }
+
   @media (max-width: 500px) {
     max-width: 330px;
     padding: 10px 36px;
@@ -131,19 +134,21 @@ const Skills = () => {
         </Desc>
         <SkillsContainer>
           {skills.map((skill, index) => (
-            <Skill key={index}>
-              <SkillTitle>
-                {language === 'es' ? skill.title : skill.titleEn}
-              </SkillTitle>
-              <SkillList>
-                {skill.skills.map((item, index) => (
-                  <SkillItem key={index}>
-                    <SkillImage src={item.image} />
-                    {item.name}
-                  </SkillItem>
-                ))}
-              </SkillList>
-            </Skill>
+            <Reveal key={index}>
+              <Skill>
+                <SkillTitle>
+                  {language === 'es' ? skill.title : skill.titleEn}
+                </SkillTitle>
+                <SkillList>
+                  {skill.skills.map((item, index) => (
+                    <SkillItem key={index}>
+                      <SkillImage src={item.image} />
+                      {item.name}
+                    </SkillItem>
+                  ))}
+                </SkillList>
+              </Skill>
+            </Reveal>
           ))}
         </SkillsContainer>
       </Wrapper>

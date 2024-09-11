@@ -54,7 +54,7 @@ const ContactForm = styled.form`
   max-width: 600px;
   display: flex;
   flex-direction: column;
-  background-color: rgba(17, 25, 40, 0.83);
+  background-color: ${({ theme }) => theme.card};
   border: 1px solid rgba(255, 255, 255, 0.125);
   padding: 32px;
   border-radius: 12px;
@@ -104,7 +104,7 @@ const ContactButton = styled.input`
   width: 100%;
   text-decoration: none;
   text-align: center;
-  background: hsla(271, 100%, 50%, 1);
+  background: ${({ theme }) => theme.button};
   padding: 13px 16px;
   margin-top: 2px;
   border-radius: 12px;

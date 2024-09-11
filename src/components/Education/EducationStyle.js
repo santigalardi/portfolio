@@ -15,6 +15,7 @@ export const Container = styled.div`
 
 export const Wrapper = styled.div`
   position: relative;
+  margin-bottom: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,10 +55,10 @@ export const Desc = styled.div`
 export const TimelineSection = styled.div`
   width: 100%;
   max-width: 1000px;
-  margin-top: 10px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 20px;
 `;

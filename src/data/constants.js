@@ -143,10 +143,15 @@ export const skills = [
         name: 'Auth0',
         image: 'https://www.vectorlogo.zone/logos/auth0/auth0-icon.svg',
       },
-      // {
-      //   name: 'AWS',
-      //   image: 'https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg',
-      // }
+      {
+        name: 'AWS',
+        image:
+          'https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg',
+      },
+      {
+        name: 'Docker',
+        image: 'https://www.vectorlogo.zone/logos/docker/docker-icon.svg',
+      },
     ],
   },
 

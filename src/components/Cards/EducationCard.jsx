@@ -2,14 +2,13 @@
 import styled from 'styled-components';
 
 const Document = styled.img`
-  display: none;
+  display: flex;
   height: 70px;
   width: fit-content;
-  background-color: #000;
-  border-radius: 10px;
+  cursor: pointer;
   &:hover {
-    cursor: pointer;
-    opacity: 0.8;
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
   }
 `;
 
@@ -36,7 +35,7 @@ const Span = styled.span`
 const Card = styled.div`
   width: 700px;
   border-radius: 10px;
-  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+  box-shadow: ${({ theme }) => theme.primary + 50} 0px 2px 6px;
   padding: 12px 16px;
   justify-content: space-between;
   position: relative;
@@ -44,9 +43,10 @@ const Card = styled.div`
   display: flex;
   flex-direction: column;
   gap: 12px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border: 0.1px solid ${({ theme }) => theme.primary + 90};
   &:hover {
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: ${({ theme }) => theme.primary + 50} 0px 4px 8px;
     transform: translateY(-5px);
   }
   @media only screen and (max-width: 768px) {
@@ -54,21 +54,13 @@ const Card = styled.div`
     gap: 8px;
     width: 480px;
   }
-
-  &:hover ${Document} {
-    display: flex;
-  }
-
-  &:hover ${Span} {
-    overflow: visible;
-    -webkit-line-clamp: unset;
-  }
-  border: 0.1px solid #854ce6;
 `;
 
 const Top = styled.div`
   width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   gap: 12px;
 `;
 
@@ -125,15 +117,15 @@ const EducationCard = ({ education }) => {
           <Name>{education.school}</Name>
           <Date>{education.date}</Date>
         </Body>
+        {education.cert && (
+          <a href={education.cert} target="_blank" rel="noopener noreferrer">
+            <Document src={education.cert} />
+          </a>
+        )}
       </Top>
       <Description>
         <Span>{education.desc}</Span>
       </Description>
-      {education.cert && (
-        <a href={education.cert} target="new">
-          <Document src={education.cert} />
-        </a>
-      )}
     </Card>
   );
 };

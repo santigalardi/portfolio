@@ -10,6 +10,7 @@ import ProjectCard from '../Cards/ProjectCards';
 import { projectsEs, projectsEn } from '../../data/constants';
 import { useContext } from 'react';
 import LanguageContext from '../../context/LanguageContext';
+import Reveal from '../Reveal/Reveal';
 
 const Projects = ({ openModal, setOpenModal }) => {
   const { language } = useContext(LanguageContext);
@@ -26,12 +27,13 @@ const Projects = ({ openModal, setOpenModal }) => {
         </Desc>
         <CardContainer>
           {projects.map((project, index) => (
-            <ProjectCard
-              project={project}
-              openModal={openModal}
-              setOpenModal={setOpenModal}
-              key={index}
-            />
+            <Reveal key={index}>
+              <ProjectCard
+                project={project}
+                openModal={openModal}
+                setOpenModal={setOpenModal}
+              />
+            </Reveal>
           ))}
         </CardContainer>
       </Wrapper>

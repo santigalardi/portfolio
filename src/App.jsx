@@ -15,6 +15,7 @@ import EarthCanvas from './components/Canvas/Earth.jsx';
 import { Toaster } from 'sonner';
 import LanguageProvider from './context/LanguageProvider.jsx';
 import './App.css';
+import Reveal from './components/Reveal/Reveal.jsx';
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -25,8 +26,8 @@ const Body = styled.div`
 const Wrapper = styled.div`
   background: linear-gradient(
       38.73deg,
-      rgba(204, 0, 187, 0.15) 0%,
-      rgba(201, 32, 184, 0) 50%
+      ${({ theme }) => theme.primary + 22} 0%,
+      ${({ theme }) => theme.bg} 50%
     ),
     linear-gradient(
       141.27deg,
@@ -36,6 +37,7 @@ const Wrapper = styled.div`
   width: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 98%, 0 100%);
 `;
+
 function App() {
   // eslint-disable-next-line no-unused-vars
   const [darkMode, setDarkMode] = useState(true);
@@ -46,19 +48,28 @@ function App() {
         <Router>
           <Navbar />
           <Body>
-            <HeroSection />
-            <Wrapper>
-              <Skills />
-              {/* <Experience /> */}
-            </Wrapper>
-            <Projects openModal={openModal} setOpenModal={setOpenModal} />
-            <Wrapper>
-              <Education />
-            </Wrapper>
-            <Wrapper>
-              <EarthCanvas />
-              <Contact />
-            </Wrapper>
+            <Reveal>
+              <HeroSection />
+            </Reveal>
+            <Reveal>
+              <Wrapper>
+                <Skills />
+              </Wrapper>
+            </Reveal>
+            <Reveal>
+              <Projects openModal={openModal} setOpenModal={setOpenModal} />
+            </Reveal>
+            <Reveal>
+              <Wrapper>
+                <Education />
+              </Wrapper>
+            </Reveal>
+            <Reveal>
+              <Wrapper>
+                <EarthCanvas />
+                <Contact />
+              </Wrapper>
+            </Reveal>
             <Toaster position="bottom-right" richColors />
             <Footer />
             {openModal.state && (
