@@ -9,7 +9,6 @@ import {
   ButtonContainer,
   MobileIcon,
   MobileMenu,
-  MobileLink,
 } from './NavBarStyledComponent.js';
 import { DiCssdeck } from 'react-icons/di';
 import { FaBars } from 'react-icons/fa';
@@ -22,9 +21,11 @@ import LanguageContext from '../../context/LanguageContext';
 
 const SocialMediaIcons = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 8px;
+  @media (min-width: 960px) {
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 const SocialMediaIcon = styled.a`
@@ -99,46 +100,46 @@ const Navbar = () => {
         </ButtonContainer>
         {isOpen && (
           <MobileMenu isOpen={isOpen}>
-            <MobileLink
+            <NavLink
               href="#about"
               onClick={() => {
                 setIsOpen(!isOpen);
               }}
             >
               {navText.about}
-            </MobileLink>
-            <MobileLink
+            </NavLink>
+            <NavLink
               href="#skills"
               onClick={() => {
                 setIsOpen(!isOpen);
               }}
             >
               {navText.skills}
-            </MobileLink>
-            <MobileLink
+            </NavLink>
+            <NavLink
               href="#projects"
               onClick={() => {
                 setIsOpen(!isOpen);
               }}
             >
               {navText.projects}
-            </MobileLink>
-            <MobileLink
+            </NavLink>
+            <NavLink
               href="#education"
               onClick={() => {
                 setIsOpen(!isOpen);
               }}
             >
               {navText.education}
-            </MobileLink>
-            <MobileLink
+            </NavLink>
+            <NavLink
               href="#contact"
               onClick={() => {
                 setIsOpen(!isOpen);
               }}
             >
               {navText.contact}
-            </MobileLink>
+            </NavLink>
             <SocialMediaIcons>
               <SocialMediaIcon href={BioEs.linkedin} target="display">
                 <LinkedInIcon />

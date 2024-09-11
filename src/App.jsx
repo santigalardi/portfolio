@@ -56,9 +56,7 @@ function App() {
                 <Skills />
               </Wrapper>
             </Reveal>
-            <Reveal>
-              <Projects openModal={openModal} setOpenModal={setOpenModal} />
-            </Reveal>
+            <Projects openModal={openModal} setOpenModal={setOpenModal} />
             <Reveal>
               <Wrapper>
                 <Education />
