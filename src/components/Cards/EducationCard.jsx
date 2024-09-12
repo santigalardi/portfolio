@@ -35,7 +35,7 @@ const Span = styled.span`
 const Card = styled.div`
   width: 700px;
   border-radius: 10px;
-  box-shadow: ${({ theme }) => theme.primary + 50} 0px 2px 6px;
+  box-shadow: ${({ theme }) => theme.primary + 50} 0px 1px 4px;
   padding: 12px 16px;
   justify-content: space-between;
   position: relative;
@@ -52,7 +52,7 @@ const Card = styled.div`
   @media only screen and (max-width: 768px) {
     padding: 10px;
     gap: 8px;
-    width: 480px;
+    width: 100%;
   }
 `;
 
