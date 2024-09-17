@@ -2,9 +2,9 @@
 import styled from 'styled-components';
 
 const Document = styled.img`
-  display: flex;
   height: 70px;
-  width: fit-content;
+  width: auto;
+  max-width: 100%;
   cursor: pointer;
   &:hover {
     transform: scale(1.05);
@@ -33,7 +33,8 @@ const Span = styled.span`
 `;
 
 const Card = styled.div`
-  width: 700px;
+  width: 100%;
+  max-width: 700px;
   border-radius: 10px;
   box-shadow: ${({ theme }) => theme.primary + 50} 0px 1px 4px;
   padding: 12px 16px;
@@ -52,7 +53,6 @@ const Card = styled.div`
   @media only screen and (max-width: 768px) {
     padding: 10px;
     gap: 8px;
-    width: 100%;
   }
 `;
 
@@ -62,6 +62,10 @@ const Top = styled.div`
   align-items: center;
   justify-content: space-between;
   gap: 12px;
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 `;
 
 const Image = styled.img`
@@ -78,6 +82,7 @@ const Body = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+  gap: 4px;
 `;
 
 const Degree = styled.div`
