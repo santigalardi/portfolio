@@ -25,7 +25,7 @@ export const BioEs = {
     'Me apasiona crear aplicaciones web. He trabajado en colaboración con equipos en proyectos desafiantes, donde siempre busco aportar soluciones creativas. Actualmente, colaboro en una productora de música electrónica, donde desarrollo y mejoro su sitio web💻.',
   github: 'https://github.com/santigalardi',
   resume:
-    'https://drive.google.com/file/d/1M8bZSQpotaIYwV1Q6yu3dhhb65enpNaA/view?usp=drive_link',
+    'https://drive.google.com/file/d/1w5-w291BW7YzvKPjj3I1HC7atIpiYyqi/view?usp=drive_link',
   linkedin: 'https://www.linkedin.com/in/santigalardi/',
 };
 
@@ -36,7 +36,7 @@ export const BioEn = {
     'I am passionate about creating web applications. I have collaborated on challenging projects, always striving to contribute creative solutions. Currently, I work with an electronic music production company, developing and improving their website💻.',
   github: 'https://github.com/santigalardi',
   resume:
-    'https://drive.google.com/file/d/1YhjKlBiDCHark8REb2RYrR-MAGKYX9We/view?usp=drive_link',
+    'https://drive.google.com/file/d/13mW4tRZyHgqWIrY1UdMnz4NWL1TIrF2B/view?usp=drive_link',
   linkedin: 'https://www.linkedin.com/in/santigalardi/',
 };
 

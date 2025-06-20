@@ -29,7 +29,7 @@ const HeroBgAnimation = () => (
         ry='1.07433'
         fill='#945DD6'
       >
-        <animateMotion dur='10s' repeatCount='indefinite' rotate='auto'>
+        <animate dur='10s' repeatCount='indefinite' rotate='auto'>
           <mpath xlinkHref='#path_2' />
         </animateMotion>
       </ellipse>
