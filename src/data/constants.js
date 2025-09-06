@@ -231,7 +231,7 @@ export const projectsEs = [
     tags: ['React', 'Next.js', 'Typescript', 'Supabase', 'Clerk', 'Tailwind'],
     category: 'web app',
     github: 'https://github.com/santigalardi/ravela',
-    webapp: 'https://ravela.com.ar/',
+    // webapp: 'https://ravela.com.ar/',
   },
   {
     id: 2,
@@ -262,7 +262,7 @@ export const projectsEs = [
     ],
     category: 'web app',
     github: 'https://gitlab.hostyweb.cl/krowti/krowti-frontend',
-    webapp: 'https://staging.krowti.com/iniciar-sesion',
+    webapp: 'https://krowti.com/',
   },
   {
     id: 4,
@@ -404,7 +404,7 @@ export const projectsEn = [
     tags: ['React', 'Next.js', 'Typescript', 'Supabase', 'Clerk', 'Tailwind'],
     category: 'web app',
     github: 'https://github.com/santigalardi/ravela',
-    webapp: 'https://ravela.com.ar/',
+    // webapp: 'https://ravela.com.ar/',
   },
   {
     id: 2,
@@ -435,7 +435,7 @@ export const projectsEn = [
     ],
     category: 'web app',
     github: 'https://gitlab.hostyweb.cl/krowti/krowti-frontend',
-    webapp: 'https://staging.krowti.com/iniciar-sesion',
+    webapp: 'https://krowti.com/',
   },
   {
     id: 4,
