@@ -439,7 +439,7 @@ export const projectsEn = [
     date: 'Aug 2025 - Sep 2025',
     description:
       'I developed an intuitive financial platform that allows users to efficiently manage their income and expenses. I implemented an interactive dashboard with data visualizations and advanced filters, enabling users to customize the view of their transactions. I also created a system to import and process large volumes of transactions via CSV files, simplifying bulk data management. My focus was on optimizing the user experience by streamlining navigation and ensuring quick access to key features.',
-    image: financePlatformImg,
+    image: lopidoAppImg,
     tags: [
       'React',
       'Next.js',
