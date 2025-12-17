@@ -274,7 +274,7 @@ export const projectsEs = [
     // webapp: 'https://ravela.com.ar/',
   },
   {
-    id: 2,
+    id: 4,
     title: 'Spotify Clone',
     date: 'Feb 2024 - Mar 2024',
     description:
@@ -286,7 +286,7 @@ export const projectsEs = [
     webapp: 'https://spotify-clone-santigalardis-projects.vercel.app',
   },
   {
-    id: 4,
+    id: 5,
     title: 'KrowTI',
     date: 'Oct 2023 - Mar 2024',
     description:
@@ -305,7 +305,7 @@ export const projectsEs = [
     webapp: 'https://krowti.com/',
   },
   {
-    id: 5,
+    id: 6,
     title: 'The Art Gallery',
     date: 'Jun 2023 - Jul 2023',
     description:
@@ -356,7 +356,7 @@ export const projectsEs = [
     ],
   },
   {
-    id: 5,
+    id: 7,
     title: 'Game Atlas',
     date: 'Abr 2023 - May 2023',
     description:
@@ -376,7 +376,7 @@ export const projectsEs = [
     // webapp: 'https://pi-videogames-client-rho.vercel.app/',
   },
   {
-    id: 6,
+    id: 8,
     title: 'Rick & Morty App',
     date: 'Feb 2023 - Abr 2023',
     description:
@@ -388,7 +388,7 @@ export const projectsEs = [
     webapp: 'https://rick-and-morty-client-git-main-santigalardi.vercel.app/',
   },
   {
-    id: 7,
+    id: 9,
     title: 'Infinity Games',
     date: 'Ene 2023 - Mar 2023',
     description:
@@ -400,7 +400,7 @@ export const projectsEs = [
     webapp: 'https://infinity-games.vercel.app/',
   },
   {
-    id: 8,
+    id: 10,
     title: "Jack & Johnson's",
     date: 'Nov 2022 - Ene 2023',
     description:
@@ -417,10 +417,10 @@ export const projectsEn = [
   {
     id: 0,
     title: 'DigitalYa',
-    date: 'Oct 2025',
+    date: 'Oct 2025 - Present',
     description:
-      'I developed an intuitive financial platform that allows users to efficiently manage their income and expenses. I implemented an interactive dashboard with data visualizations and advanced filters, enabling users to customize the view of their transactions. I also created a system to import and process large volumes of transactions via CSV files, simplifying bulk data management. My focus was on optimizing the user experience by streamlining navigation and ensuring quick access to key features.',
-    image: financePlatformImg,
+      'Co-Founder and CTO at DigitalYa, a digital agency dedicated to spearheading the online transformation of businesses. I architected and developed the official platform using React and TypeScript, ensuring a high-performance, conversion-oriented architecture. I implemented an advanced data tracking strategy via Google Tag Manager, GA4, and Meta Pixel to monitor key business events. The project excels in SEO performance, responsive design, and a strategic focus on lead generation and user acquisition.',
+    image: digitalYaImg,
     tags: [
       'React',
       'TypeScript',
@@ -430,51 +430,51 @@ export const projectsEn = [
       'GA4',
     ],
     category: 'web app',
-    github: 'https://github.com/santigalardi/finance-platform',
-    webapp: 'https://finance-platform-alpha.vercel.app/',
-  },
-  {
-    id: 0,
-    title: 'Finance SaaS Platform',
-    date: 'Jul 2024 - Aug 2024',
-    description:
-      'I developed an intuitive financial platform that allows users to efficiently manage their income and expenses. I implemented an interactive dashboard with data visualizations and advanced filters, enabling users to customize the view of their transactions. I also created a system to import and process large volumes of transactions via CSV files, simplifying bulk data management. My focus was on optimizing the user experience by streamlining navigation and ensuring quick access to key features.',
-    image: financePlatformImg,
-    tags: [
-      'React',
-      'Next.js',
-      'TypeScript',
-      'Clerk',
-      'Tailwind',
-      'Drizzle ORM',
-      'Hono.js',
-    ],
-    category: 'web app',
-    github: 'https://github.com/santigalardi/finance-platform',
-    webapp: 'https://finance-platform-alpha.vercel.app/',
-  },
-  {
-    id: 0,
-    title: 'Finance SaaS Platform',
-    date: 'Jul 2024 - Aug 2024',
-    description:
-      'I developed an intuitive financial platform that allows users to efficiently manage their income and expenses. I implemented an interactive dashboard with data visualizations and advanced filters, enabling users to customize the view of their transactions. I also created a system to import and process large volumes of transactions via CSV files, simplifying bulk data management. My focus was on optimizing the user experience by streamlining navigation and ensuring quick access to key features.',
-    image: financePlatformImg,
-    tags: [
-      'React',
-      'Next.js',
-      'TypeScript',
-      'Clerk',
-      'Tailwind',
-      'Drizzle ORM',
-      'Hono.js',
-    ],
-    category: 'web app',
-    github: 'https://github.com/santigalardi/finance-platform',
-    webapp: 'https://finance-platform-alpha.vercel.app/',
+    // github: 'https://github.com/santigalardi/finance-platform',
+    webapp: 'https://digitalya.com.ar/',
   },
   {
     id: 1,
+    title: 'LoPidoApp',
+    date: 'Aug 2025 - Sep 2025',
+    description:
+      'I developed an intuitive financial platform that allows users to efficiently manage their income and expenses. I implemented an interactive dashboard with data visualizations and advanced filters, enabling users to customize the view of their transactions. I also created a system to import and process large volumes of transactions via CSV files, simplifying bulk data management. My focus was on optimizing the user experience by streamlining navigation and ensuring quick access to key features.',
+    image: financePlatformImg,
+    tags: [
+      'React',
+      'Next.js',
+      'TypeScript',
+      'Clerk',
+      'Tailwind',
+      'Drizzle ORM',
+      'Hono.js',
+    ],
+    category: 'web app',
+    // github: 'https://github.com/santigalardi/finance-platform',
+    webapp: 'https://lopidoapp.com/',
+  },
+  {
+    id: 2,
+    title: 'Finance SaaS Platform',
+    date: 'Jul 2024 - Aug 2024',
+    description:
+      'I developed an intuitive financial platform that allows users to efficiently manage their income and expenses. I implemented an interactive dashboard with data visualizations and advanced filters, enabling users to customize the view of their transactions. I also created a system to import and process large volumes of transactions via CSV files, simplifying bulk data management. My focus was on optimizing the user experience by streamlining navigation and ensuring quick access to key features.',
+    image: financePlatformImg,
+    tags: [
+      'React',
+      'Next.js',
+      'TypeScript',
+      'Clerk',
+      'Tailwind',
+      'Drizzle ORM',
+      'Hono.js',
+    ],
+    category: 'web app',
+    github: 'https://github.com/santigalardi/finance-platform',
+    webapp: 'https://finance-platform-alpha.vercel.app/',
+  },
+  {
+    id: 3,
     title: 'Ravela',
     date: 'Jun 2023 - Present',
     description:
@@ -486,7 +486,7 @@ export const projectsEn = [
     // webapp: 'https://ravela.com.ar/',
   },
   {
-    id: 2,
+    id: 4,
     title: 'Spotify Clone',
     date: 'Feb 2024 - Mar 2024',
     description:
@@ -498,7 +498,7 @@ export const projectsEn = [
     webapp: 'https://spotify-clone-santigalardis-projects.vercel.app',
   },
   {
-    id: 3,
+    id: 5,
     title: 'KrowTI',
     date: 'Oct 2023 - Mar 2024',
     description:
@@ -517,7 +517,7 @@ export const projectsEn = [
     webapp: 'https://krowti.com/',
   },
   {
-    id: 4,
+    id: 6,
     title: 'The Art Gallery',
     date: 'Jun 2023 - Jul 2023',
     description:
@@ -568,7 +568,7 @@ export const projectsEn = [
     ],
   },
   {
-    id: 5,
+    id: 7,
     title: 'Game Atlas',
     date: 'Apr 2023 - May 2023',
     description:
@@ -588,7 +588,7 @@ export const projectsEn = [
     // webapp: 'https://pi-videogames-client-rho.vercel.app/',
   },
   {
-    id: 6,
+    id: 8,
     title: 'Rick & Morty App',
     date: 'Feb 2023 - Apr 2023',
     description:
@@ -600,7 +600,7 @@ export const projectsEn = [
     webapp: 'https://rick-and-morty-client-git-main-santigalardi.vercel.app/',
   },
   {
-    id: 7,
+    id: 9,
     title: 'Infinity Games',
     date: 'Jan 2023 - Mar 2023',
     description:
@@ -612,7 +612,7 @@ export const projectsEn = [
     webapp: 'https://infinity-games.vercel.app/',
   },
   {
-    id: 8,
+    id: 10,
     title: "Jack & Johnson's",
     date: 'Nov 2022 - Jan 2023',
     description:
