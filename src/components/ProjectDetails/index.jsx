@@ -179,7 +179,12 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
           </Tags>
           <Desc>{project?.description}</Desc>
           <ButtonGroup>
-            <Button dull href={project?.github} target="new">
+            <Button
+              dull
+              href={project?.github}
+              target="new"
+              disabled={!project?.github}
+            >
               {language === 'es' ? 'Ver repositorio' : 'View repository'}
             </Button>
             <Button

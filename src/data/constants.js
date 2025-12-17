@@ -4,6 +4,8 @@ import dbCert from '../images/certificado-desarrollo-web-coderhouse.png';
 import jsCert from '../images/certificado-javascript-coderhouse.png';
 import reactCert from '../images/certificado-react-coderhouse.png';
 
+import digitalYaImg from '../images/digitalyaimg.png';
+import lopidoAppImg from '../images/lopidoappimg.png';
 import financePlatformImg from '../images/finance.png';
 import ravelaImg from '../images/ravela-img.png';
 import spotifyClone from '../images/spotify-clone-img.png';
@@ -203,6 +205,44 @@ export const skills = [
 export const projectsEs = [
   {
     id: 0,
+    title: 'DigitalYa',
+    date: 'Oct 2025 - Presente',
+    description:
+      'Co-Fundador y CTO de DigitalYa, una agencia de soluciones digitales enfocada en la transformación de marcas al entorno online. Desarrollé la plataforma oficial utilizando React y TypeScript, integrando una arquitectura optimizada para conversiones. Implementé una estrategia avanzada de medición de datos mediante Google Tag Manager, GA4 y Meta Pixel para el seguimiento de eventos clave. El proyecto destaca por su alto rendimiento (SEO), diseño responsivo y un enfoque estratégico en la captación de clientes potenciales.',
+    image: digitalYaImg,
+    tags: [
+      'React',
+      'TypeScript',
+      'Tailwind',
+      'Google Tags Manager',
+      'Meta Pixel',
+      'GA4',
+    ],
+    category: 'web app',
+    // github: '',
+    webapp: 'https://digitalya.com.ar/',
+  },
+  {
+    id: 1,
+    title: 'LoPidoApp',
+    date: 'Ago 2025 - Sep 2025',
+    description:
+      'Participé como Fullstack Developer en el desarrollo de una aplicación móvil de delivery tipo marketplace. Contribuí a la creación de interfaces para clientes, comercios y repartidores, implementando componentes reutilizables y pantallas críticas como catálogos, procesos de compra y seguimiento de pedidos en tiempo real. Trabajé bajo metodologías ágiles, asegurando una integración fluida entre frontend y backend y optimizando el consumo de APIs REST.',
+    image: lopidoAppImg,
+    tags: [
+      'React',
+      'React Native',
+      'TypeScript',
+      'Tailwind',
+      'Node.js',
+      'PostgreSQL',
+    ],
+    category: 'web app',
+    // github: '',
+    webapp: 'https://lopidoapp.com/',
+  },
+  {
+    id: 2,
     title: 'Finance SaaS Platform',
     date: 'Jul 2024 - Ago 2024',
     description:
@@ -222,7 +262,7 @@ export const projectsEs = [
     webapp: 'https://finance-platform-alpha.vercel.app/',
   },
   {
-    id: 1,
+    id: 3,
     title: 'Ravela',
     date: 'Jun 2023 - Presente',
     description:
@@ -246,7 +286,7 @@ export const projectsEs = [
     webapp: 'https://spotify-clone-santigalardis-projects.vercel.app',
   },
   {
-    id: 3,
+    id: 4,
     title: 'KrowTI',
     date: 'Oct 2023 - Mar 2024',
     description:
@@ -265,7 +305,7 @@ export const projectsEs = [
     webapp: 'https://krowti.com/',
   },
   {
-    id: 4,
+    id: 5,
     title: 'The Art Gallery',
     date: 'Jun 2023 - Jul 2023',
     description:
@@ -374,6 +414,45 @@ export const projectsEs = [
 ];
 
 export const projectsEn = [
+  {
+    id: 0,
+    title: 'DigitalYa',
+    date: 'Oct 2025',
+    description:
+      'I developed an intuitive financial platform that allows users to efficiently manage their income and expenses. I implemented an interactive dashboard with data visualizations and advanced filters, enabling users to customize the view of their transactions. I also created a system to import and process large volumes of transactions via CSV files, simplifying bulk data management. My focus was on optimizing the user experience by streamlining navigation and ensuring quick access to key features.',
+    image: financePlatformImg,
+    tags: [
+      'React',
+      'TypeScript',
+      'Tailwind',
+      'Google Tags Manager',
+      'Meta Pixel',
+      'GA4',
+    ],
+    category: 'web app',
+    github: 'https://github.com/santigalardi/finance-platform',
+    webapp: 'https://finance-platform-alpha.vercel.app/',
+  },
+  {
+    id: 0,
+    title: 'Finance SaaS Platform',
+    date: 'Jul 2024 - Aug 2024',
+    description:
+      'I developed an intuitive financial platform that allows users to efficiently manage their income and expenses. I implemented an interactive dashboard with data visualizations and advanced filters, enabling users to customize the view of their transactions. I also created a system to import and process large volumes of transactions via CSV files, simplifying bulk data management. My focus was on optimizing the user experience by streamlining navigation and ensuring quick access to key features.',
+    image: financePlatformImg,
+    tags: [
+      'React',
+      'Next.js',
+      'TypeScript',
+      'Clerk',
+      'Tailwind',
+      'Drizzle ORM',
+      'Hono.js',
+    ],
+    category: 'web app',
+    github: 'https://github.com/santigalardi/finance-platform',
+    webapp: 'https://finance-platform-alpha.vercel.app/',
+  },
   {
     id: 0,
     title: 'Finance SaaS Platform',
